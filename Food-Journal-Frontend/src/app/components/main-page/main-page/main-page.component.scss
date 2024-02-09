@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+
+$tablet-media: 950px;
+$phone-media: 500px;
+$phone-small-media: 350px;
+
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 40px;
+    width: 100%;
+    gap: 12px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--md-sys-color-primary);
+    font-size: 10px;
+
+    @media (min-width: $phone-small-media) {
+        font-size: 12px;
+    }
+
+    @media (min-width: calc($phone-media + 50px)) {
+        font-size: 14px;
+    }
+
+    @media (min-width: calc($tablet-media + 100px)) {
+        font-size: 18px;
+    }
+}
+
+.button-wrapper-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.slider-wrapper {
+    box-sizing: border-box;
+    width: 80%;
+    min-width: 280px;
+    max-width: 600px;
+    margin-top: 32px;
+    padding-inline: 32px;
+
+    @media (max-width: $phone-media) {
+        padding-inline: 12px;
+    }
+}
+
+.mat-mdc-slider {
+    margin: unset;
+}
+
+.slider {
+    display: flex;
+}

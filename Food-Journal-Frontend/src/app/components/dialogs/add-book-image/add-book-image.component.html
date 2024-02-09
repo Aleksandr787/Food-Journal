@@ -1,0 +1,32 @@
+<h1 *ngIf="!isData()" mat-dialog-title class="headline">
+    Add Book
+</h1>
+<h1 *ngIf="isData()" mat-dialog-title class="headline">
+    Edit Book
+</h1>
+<div mat-dialog-content>
+    <form [formGroup]="bookForm" class="bookCardForm">
+        <mat-form-field appearance="outline">
+            <mat-label>Name</mat-label>
+            <input matInput formControlName="name">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>AuthorName</mat-label>
+            <input matInput formControlName="authorName">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Image</mat-label>
+            <input matInput formControlName="imageUrl">
+        </mat-form-field>
+    </form>
+</div>
+
+<div mat-dialog-actions class="actions">
+    <button mat-flat-button (click)="onOk()" [disabled]="bookForm.invalid">Save</button>
+</div>
+
+<!-- <div class="close">
+    <button mat-icon-button (click)="onClose()">
+        <mat-icon>arrow_back</mat-icon>
+    </button>
+</div> -->

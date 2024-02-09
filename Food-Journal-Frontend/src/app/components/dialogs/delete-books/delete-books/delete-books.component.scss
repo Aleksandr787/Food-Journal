@@ -1,0 +1,46 @@
+@use '../../../../../scss/mixins/typography';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+
+$tablet-media: 950px;
+$tablet-small-media: 600px;
+$phone-media: 500px;
+
+// .bookCardForm{
+//     display: flex;
+//     flex-direction: column;
+// }
+
+.headline {
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    @include typography.headline-small;
+    color: var(--md-sys-color-on-surface);
+}
+
+.actions {
+    display: flex;
+    justify-content: right;
+    gap: 16px;
+    margin-top: 32px;
+
+    // &__text-button {
+    //     color: var(--md-sys-color-primary);
+    //     cursor: pointer; 
+    //     @include typography.label-large;
+    // }
+
+    // &__delete-button {
+    //     color: #7b2323;
+    //     @include typography.label-large;
+    // }
+}
+
+// p.disabled {
+//     pointer-events: none;
+//     color: var(--md-sys-color-on-surface);
+//     opacity: 0.38;
+//     cursor: not-allowed; 
+//     @include typography.label-large;
+// }

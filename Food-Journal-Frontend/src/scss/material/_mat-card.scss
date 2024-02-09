@@ -1,0 +1,10 @@
+.mat-mdc-card {
+    --mdc-elevated-card-container-shape: 12px;
+    --mdc-elevated-card-container-color: var(--md-sys-color-surface-container-high);
+    --mat-card-subtitle-text-color: var(--md-sys-color-on-surface-variant);
+    max-width: 500px;
+}
+
+.mat-mdc-card-content {
+    color: var(--md-sys-color-on-surface);
+}

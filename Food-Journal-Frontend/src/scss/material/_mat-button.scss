@@ -1,0 +1,26 @@
+@use '../mixins/typography';
+
+.mat-mdc-dialog-container .mdc-dialog__surface {
+    padding: 16px;
+}
+
+.mdc-button.mdc-button {
+    --mdc-filled-button-container-color: var(--md-sys-color-primary);
+    --mdc-filled-button-label-text-color: var(--md-sys-color-on-primary);
+    --mdc-filled-button-container-height: 40px;
+    --mdc-filled-button-container-shape: 20px;
+    --mat-filled-button-state-layer-color: var(--md-sys-color-on-primary);
+    --mat-filled-button-hover-state-layer-opacity: 0.08;
+    --mat-filled-button-ripple-color: var(--md-sys-color-on-primary);
+
+    --mdc-filled-button-disabled-container-color: var(--md-sys-color-filled-button-disabled-container);
+    --mdc-filled-button-disabled-label-text-color: var(--md-sys-color-filled-button-disabled-label-text);
+    
+    .mdc-button__label {
+        @include typography.label-large;
+    }
+
+    .mat-ripple {
+        opacity: 0.1;
+    }
+}

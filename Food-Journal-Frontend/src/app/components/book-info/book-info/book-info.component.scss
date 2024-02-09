@@ -1,0 +1,114 @@
+@use '../../../../scss/mixins/typography';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+
+$tablet-media: 950px;
+$phone-media: 500px;
+$border: 2px solid var(--md-sys-color-on-surface);
+
+.image-border{
+    border-radius: 16px;
+    border: $border;
+}
+
+.card-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+}
+
+.close {    
+    padding: 4px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 32px;
+    gap: 32px;
+
+    @media (max-width: $phone-media) {
+        padding: 8px;
+        padding-top: 24px;
+        padding-bottom: 0px;
+    }
+    
+    &__left {
+        display: flex;
+        flex-direction: row;
+        align-items: end;
+        justify-content: center;
+
+        &__image {
+            display: flex;
+            object-fit: cover;
+            aspect-ratio: 3/4;
+            border-radius: 16px;
+            width: 250px;
+            padding: 6px;
+
+            @media (max-width: $phone-media) {
+                width: 200px;
+            }
+        }
+
+        &__buttons {
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            height: min-content;
+            gap: 8px;
+            border-radius: 16px;
+            border-top-left-radius: 0px;
+            border-bottom-left-radius: 0px;
+            padding: 6px;
+            border: $border;  
+            margin-bottom: 24px;
+            border-left: none;
+        }
+    }
+
+    &__right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+        max-width: 700px;
+
+        &__info {
+            display: flex;
+            flex-direction: column;
+            background-color: var(--md-sys-color-surface-container-highest);
+            // box-shadow: 0px 0px 4px -1px var(--md-sys-color-on-surface);
+            border: 2px solid var(--md-sys-color-on-surface);
+            padding: 16px;
+            border-radius: 16px;
+            box-sizing: border-box;
+
+            &__name {
+                word-break: break-word;
+                @include typography.headline-medium;
+                color: var(--md-sys-color-on-surface);
+
+            }
+
+            &__author {
+                word-break: break-word;
+                color: var(--md-sys-color-on-surface-variant);
+                @include typography.title-medium;
+                margin-bottom: 12px
+            }
+
+            &__description {
+                color: var(--md-sys-color-on-surface-variant);
+                @include typography.body-large;
+            }
+
+        }
+    }
+}
