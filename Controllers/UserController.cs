@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
+using Swashbuckle.AspNetCore.Annotations;
 using System.ComponentModel;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
@@ -13,7 +14,7 @@ using System.Text;
 
 namespace Food_Journal.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/auth")]
     [ApiController]
     public class UserController : ControllerBase
     {
@@ -28,7 +29,7 @@ namespace Food_Journal.Controllers
 
         [HttpPost("login")]
         [AllowAnonymous]
-        [Description("Login to system")]
+        [SwaggerOperation("Login to system AAAAAAA")]
         public ActionResult<LoginResponse> Login([FromBody] LoginRequest request, CancellationToken cancellationToken)
         {
             var user = _userService.GetUser(request.Email, request.Password);
@@ -38,7 +39,7 @@ namespace Food_Journal.Controllers
             return Ok(result);
         }
 
-        [HttpPost("registrate")]
+        [HttpPost("register")]
         [Description("Регистрация нового пользователя")]
         public ActionResult<bool> Register([FromBody] UserRequest request, CancellationToken cancellationToken)
         {
