@@ -8,5 +8,7 @@ namespace Food_Journal.Contracts
         public string Author { get; init; }
         [Required]
         public string Name { get; init; }
+        [Required]
+        public string ImageUrl { get; init; }
     }
 }
