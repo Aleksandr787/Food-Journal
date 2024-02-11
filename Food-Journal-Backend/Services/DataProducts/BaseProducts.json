@@ -1,0 +1,2746 @@
+[
+ {
+  "Name": "Абрикосы",
+  "Proteins": 1,
+  "Fats": 0,
+  "Carbohydrates": 10,
+  "Kcal": 45
+ },
+ {
+  "Name": "Авокадо",
+  "Proteins": 2,
+  "Fats": 19,
+  "Carbohydrates": 7,
+  "Kcal": 197
+ },
+ {
+  "Name": "Аджика",
+  "Proteins": 2,
+  "Fats": 3,
+  "Carbohydrates": 8,
+  "Kcal": 59
+ },
+ {
+  "Name": "Айва",
+  "Proteins": 1,
+  "Fats": 0,
+  "Carbohydrates": 9,
+  "Kcal": 41
+ },
+ {
+  "Name": "Айсберг",
+  "Proteins": 1,
+  "Fats": 0,
+  "Carbohydrates": 2,
+  "Kcal": 17
+ },
+ {
+  "Name": "Активиа кефирная 1%",
+  "Proteins": 3,
+  "Fats": 1,
+  "Carbohydrates": 4,
+  "Kcal": 39
+ },
+ {
+  "Name": "Ананас",
+  "Proteins": 0,
+  "Fats": 0,
+  "Carbohydrates": 12,
+  "Kcal": 50
+ },
+ {
+  "Name": "Ананас консервированный",
+  "Proteins": 0,
+  "Fats": 0,
+  "Carbohydrates": 16,
+  "Kcal": 65
+ },
+ {
+  "Name": "Ананас цукаты",
+  "Proteins": 1,
+  "Fats": 2,
+  "Carbohydrates": 15,
+  "Kcal": 78
+ },
+ {
+  "Name": "Апельсин",
+  "Proteins": 2,
+  "Fats": 0,
+  "Carbohydrates": 9,
+  "Kcal": 43
+ },
+ {
+  "Name": "Апельсиновый сок",
+  "Proteins": 0,
+  "Fats": 0,
+  "Carbohydrates": 11,
+  "Kcal": 44
+ },
+ {
+  "Name": "Арахис",
+  "Proteins": 25,
+  "Fats": 46,
+  "Carbohydrates": 13,
+  "Kcal": 561
+ },
+ {
+  "Name": "Арахис в сахаре",
+  "Proteins": 18,
+  "Fats": 30,
+  "Carbohydrates": 51,
+  "Kcal": 535
+ },
+ {
+  "Name": "Базилик свежий",
+  "Proteins": 3,
+  "Fats": 1,
+  "Carbohydrates": 4,
+  "Kcal": 27
+ },
+ {
+  "Name": "Баклажаны",
+  "Proteins": 1,
+  "Fats": 0,
+  "Carbohydrates": 6,
+  "Kcal": 27
+ },
+ {
+  "Name": "Банан",
+  "Proteins": 3,
+  "Fats": 3,
+  "Carbohydrates": 22,
+  "Kcal": 97
+ },
+ {
+  "Name": "Баранина вареная",
+  "Proteins": 24,
+  "Fats": 21,
+  "Carbohydrates": 0,
+  "Kcal": 286
+ },
+ {
+  "Name": "Батон",
+  "Proteins": 8,
+  "Fats": 3,
+  "Carbohydrates": 49,
+  "Kcal": 264
+ },
+ {
+  "Name": "Бедро индейки",
+  "Proteins": 16,
+  "Fats": 9,
+  "Carbohydrates": 1,
+  "Kcal": 143
+ },
+ {
+  "Name": "Бекон",
+  "Proteins": 15,
+  "Fats": 45,
+  "Carbohydrates": 2,
+  "Kcal": 469
+ },
+ {
+  "Name": "Блины обычные",
+  "Proteins": 6,
+  "Fats": 6,
+  "Carbohydrates": 25,
+  "Kcal": 178
+ },
+ {
+  "Name": "Борщ лёгкий",
+  "Proteins": 3,
+  "Fats": 2,
+  "Carbohydrates": 9,
+  "Kcal": 58
+ },
+ {
+  "Name": "Брокколи",
+  "Proteins": 4,
+  "Fats": 1,
+  "Carbohydrates": 4,
+  "Kcal": 33
+ },
+ {
+  "Name": "Брусника",
+  "Proteins": 1,
+  "Fats": 0,
+  "Carbohydrates": 9,
+  "Kcal": 42
+ },
+ {
+  "Name": "Бульон из говядины",
+  "Proteins": 6,
+  "Fats": 4,
+  "Carbohydrates": 0,
+  "Kcal": 57
+ },
+ {
+  "Name": "Бульон из куриной грудки",
+  "Proteins": 7,
+  "Fats": 1,
+  "Carbohydrates": 0,
+  "Kcal": 42
+ },
+ {
+  "Name": "Бульон куриный",
+  "Proteins": 3,
+  "Fats": 2,
+  "Carbohydrates": 1,
+  "Kcal": 33
+ },
+ {
+  "Name": "Вареная говядина",
+  "Proteins": 23,
+  "Fats": 16,
+  "Carbohydrates": 0,
+  "Kcal": 236
+ },
+ {
+  "Name": "Вареная колбаса",
+  "Proteins": 12,
+  "Fats": 22,
+  "Carbohydrates": 1,
+  "Kcal": 253
+ },
+ {
+  "Name": "Вареная куриная грудка",
+  "Proteins": 27,
+  "Fats": 6,
+  "Carbohydrates": 1,
+  "Kcal": 138
+ },
+ {
+  "Name": "Вареная курица",
+  "Proteins": 19,
+  "Fats": 9,
+  "Carbohydrates": 0,
+  "Kcal": 150
+ },
+ {
+  "Name": "Вареная морковь",
+  "Proteins": 1,
+  "Fats": 0,
+  "Carbohydrates": 6,
+  "Kcal": 31
+ },
+ {
+  "Name": "Вареная чечевица",
+  "Proteins": 8,
+  "Fats": 0,
+  "Carbohydrates": 20,
+  "Kcal": 111
+ },
+ {
+  "Name": "Варёная сгущёнка",
+  "Proteins": 7,
+  "Fats": 9,
+  "Carbohydrates": 55,
+  "Kcal": 326
+ },
+ {
+  "Name": "Вермишель",
+  "Proteins": 11,
+  "Fats": 1,
+  "Carbohydrates": 72,
+  "Kcal": 347
+ },
+ {
+  "Name": "Ветчина",
+  "Proteins": 16,
+  "Fats": 19,
+  "Carbohydrates": 2,
+  "Kcal": 246
+ },
+ {
+  "Name": "Вино белое сухое",
+  "Proteins": 0,
+  "Fats": 0,
+  "Carbohydrates": 0,
+  "Kcal": 67
+ },
+ {
+  "Name": "Виноград",
+  "Proteins": 1,
+  "Fats": 1,
+  "Carbohydrates": 16,
+  "Kcal": 69
+ },
+ {
+  "Name": "Вино красное сухое",
+  "Proteins": 0,
+  "Fats": 0,
+  "Carbohydrates": 1,
+  "Kcal": 70
+ },
+ {
+  "Name": "Вишня",
+  "Proteins": 1,
+  "Fats": 0,
+  "Carbohydrates": 11,
+  "Kcal": 54
+ },
+ {
+  "Name": "Геркулес",
+  "Proteins": 12,
+  "Fats": 6,
+  "Carbohydrates": 56,
+  "Kcal": 327
+ },
+ {
+  "Name": "Говядина",
+  "Proteins": 20,
+  "Fats": 13,
+  "Carbohydrates": 0,
+  "Kcal": 192
+ },
+ {
+  "Name": "Говяжья печень",
+  "Proteins": 17,
+  "Fats": 3,
+  "Carbohydrates": 3,
+  "Kcal": 110
+ },
+ {
+  "Name": "Голень куриная",
+  "Proteins": 20,
+  "Fats": 9,
+  "Carbohydrates": 0,
+  "Kcal": 168
+ },
+ {
+  "Name": "Голландский сыр",
+  "Proteins": 24,
+  "Fats": 30,
+  "Carbohydrates": 0,
+  "Kcal": 373
+ },
+ {
+  "Name": "Голубика",
+  "Proteins": 1,
+  "Fats": 1,
+  "Carbohydrates": 9,
+  "Kcal": 46
+ },
+ {
+  "Name": "Горбуша",
+  "Proteins": 21,
+  "Fats": 7,
+  "Carbohydrates": 0,
+  "Kcal": 143
+ },
+ {
+  "Name": "Горох",
+  "Proteins": 19,
+  "Fats": 3,
+  "Carbohydrates": 42,
+  "Kcal": 256
+ },
+ {
+  "Name": "Гороховое пюре",
+  "Proteins": 8,
+  "Fats": 1,
+  "Carbohydrates": 23,
+  "Kcal": 106
+ },
+ {
+  "Name": "Горошек зеленый",
+  "Proteins": 4,
+  "Fats": 0,
+  "Carbohydrates": 10,
+  "Kcal": 59
+ },
+ {
+  "Name": "Горчица",
+  "Proteins": 8,
+  "Fats": 11,
+  "Carbohydrates": 13,
+  "Kcal": 184
+ },
+ {
+  "Name": "Гранат",
+  "Proteins": 2,
+  "Fats": 1,
+  "Carbohydrates": 14,
+  "Kcal": 67
+ },
+ {
+  "Name": "Грейпфрут",
+  "Proteins": 1,
+  "Fats": 0,
+  "Carbohydrates": 9,
+  "Kcal": 41
+ },
+ {
+  "Name": "Грецкие орехи",
+  "Proteins": 15,
+  "Fats": 65,
+  "Carbohydrates": 14,
+  "Kcal": 697
+ },
+ {
+  "Name": "Гречневая каша рассыпчатая",
+  "Proteins": 5,
+  "Fats": 1,
+  "Carbohydrates": 24,
+  "Kcal": 131
+ },
+ {
+  "Name": "Гречневая крупа",
+  "Proteins": 12,
+  "Fats": 4,
+  "Carbohydrates": 63,
+  "Kcal": 329
+ },
+ {
+  "Name": "Грибы белые",
+  "Proteins": 9,
+  "Fats": 2,
+  "Carbohydrates": 3,
+  "Kcal": 28
+ },
+ {
+  "Name": "Грибы белые сушеные",
+  "Proteins": 27,
+  "Fats": 7,
+  "Carbohydrates": 16,
+  "Kcal": 239
+ },
+ {
+  "Name": "Грибы грузди",
+  "Proteins": 2,
+  "Fats": 1,
+  "Carbohydrates": 1,
+  "Kcal": 16
+ },
+ {
+  "Name": "Грибы лисички",
+  "Proteins": 2,
+  "Fats": 1,
+  "Carbohydrates": 1,
+  "Kcal": 20
+ },
+ {
+  "Name": "Грибы маслята",
+  "Proteins": 2,
+  "Fats": 1,
+  "Carbohydrates": 1,
+  "Kcal": 9
+ },
+ {
+  "Name": "Грибы опята",
+  "Proteins": 2,
+  "Fats": 1,
+  "Carbohydrates": 1,
+  "Kcal": 17
+ },
+ {
+  "Name": "Грибы подберёзовики свежие",
+  "Proteins": 2,
+  "Fats": 1,
+  "Carbohydrates": 4,
+  "Kcal": 17
+ },
+ {
+  "Name": "Грибы подосиновики свежие",
+  "Proteins": 3,
+  "Fats": 1,
+  "Carbohydrates": 3,
+  "Kcal": 26
+ },
+ {
+  "Name": "Грибы рыжики",
+  "Proteins": 2,
+  "Fats": 1,
+  "Carbohydrates": 1,
+  "Kcal": 17
+ },
+ {
+  "Name": "Грибы шампиньоны",
+  "Proteins": 4,
+  "Fats": 1,
+  "Carbohydrates": 0,
+  "Kcal": 22
+ },
+ {
+  "Name": "Груша",
+  "Proteins": 1,
+  "Fats": 0,
+  "Carbohydrates": 12,
+  "Kcal": 51
+ },
+ {
+  "Name": "Груша (сухофрукты)",
+  "Proteins": 2,
+  "Fats": 0,
+  "Carbohydrates": 62,
+  "Kcal": 246
+ },
+ {
+  "Name": "Дайкон",
+  "Proteins": 1,
+  "Fats": 0,
+  "Carbohydrates": 4,
+  "Kcal": 21
+ },
+ {
+  "Name": "Джем мандариновый",
+  "Proteins": 0,
+  "Fats": 0,
+  "Carbohydrates": 72,
+  "Kcal": 276
+ },
+ {
+  "Name": "Дрожжи",
+  "Proteins": 29,
+  "Fats": 3,
+  "Carbohydrates": 23,
+  "Kcal": 263
+ },
+ {
+  "Name": "Дрожжи сухие",
+  "Proteins": 49,
+  "Fats": 6,
+  "Carbohydrates": 40,
+  "Kcal": 410
+ },
+ {
+  "Name": "Дыня",
+  "Proteins": 1,
+  "Fats": 0,
+  "Carbohydrates": 8,
+  "Kcal": 35
+ },
+ {
+  "Name": "Ежевика",
+  "Proteins": 2,
+  "Fats": 0,
+  "Carbohydrates": 5,
+  "Kcal": 31
+ },
+ {
+  "Name": "Жареное яйцо",
+  "Proteins": 14,
+  "Fats": 14,
+  "Carbohydrates": 1,
+  "Kcal": 183
+ },
+ {
+  "Name": "Желатин",
+  "Proteins": 86,
+  "Fats": 0,
+  "Carbohydrates": 1,
+  "Kcal": 343
+ },
+ {
+  "Name": "Зеленая фасоль",
+  "Proteins": 3,
+  "Fats": 0,
+  "Carbohydrates": 4,
+  "Kcal": 30
+ },
+ {
+  "Name": "Зеленый лук",
+  "Proteins": 1,
+  "Fats": 0,
+  "Carbohydrates": 4,
+  "Kcal": 19
+ },
+ {
+  "Name": "Зелень петрушки",
+  "Proteins": 4,
+  "Fats": 0,
+  "Carbohydrates": 8,
+  "Kcal": 50
+ },
+ {
+  "Name": "Зелёный горошек \"Бондюэль\"",
+  "Proteins": 5,
+  "Fats": 0,
+  "Carbohydrates": 8,
+  "Kcal": 60
+ },
+ {
+  "Name": "Зелёный горошек \"Фрау Марта\"",
+  "Proteins": 3,
+  "Fats": 0,
+  "Carbohydrates": 7,
+  "Kcal": 40
+ },
+ {
+  "Name": "Земляника",
+  "Proteins": 1,
+  "Fats": 0,
+  "Carbohydrates": 9,
+  "Kcal": 38
+ },
+ {
+  "Name": "Зефир бело-розовый",
+  "Proteins": 1,
+  "Fats": 0,
+  "Carbohydrates": 80,
+  "Kcal": 304
+ },
+ {
+  "Name": "Изюм",
+  "Proteins": 2,
+  "Fats": 0,
+  "Carbohydrates": 68,
+  "Kcal": 280
+ },
+ {
+  "Name": "Имбирь свежий",
+  "Proteins": 2,
+  "Fats": 1,
+  "Carbohydrates": 16,
+  "Kcal": 72
+ },
+ {
+  "Name": "Индейка (грудка)",
+  "Proteins": 19,
+  "Fats": 2,
+  "Carbohydrates": 0,
+  "Kcal": 94
+ },
+ {
+  "Name": "Индейка (филе)",
+  "Proteins": 20,
+  "Fats": 12,
+  "Carbohydrates": 0,
+  "Kcal": 188
+ },
+ {
+  "Name": "Инжир (сухофрукты)",
+  "Proteins": 3,
+  "Fats": 1,
+  "Carbohydrates": 57,
+  "Kcal": 239
+ },
+ {
+  "Name": "Йогурт Активия",
+  "Proteins": 4,
+  "Fats": 3,
+  "Carbohydrates": 11,
+  "Kcal": 97
+ },
+ {
+  "Name": "Кабачки жареные",
+  "Proteins": 1,
+  "Fats": 6,
+  "Carbohydrates": 7,
+  "Kcal": 91
+ },
+ {
+  "Name": "Кабачки цукини",
+  "Proteins": 2,
+  "Fats": 0,
+  "Carbohydrates": 3,
+  "Kcal": 16
+ },
+ {
+  "Name": "Кабачковая икра",
+  "Proteins": 1,
+  "Fats": 6,
+  "Carbohydrates": 7,
+  "Kcal": 90
+ },
+ {
+  "Name": "Кабачок",
+  "Proteins": 1,
+  "Fats": 1,
+  "Carbohydrates": 5,
+  "Kcal": 28
+ },
+ {
+  "Name": "Какао",
+  "Proteins": 14,
+  "Fats": 9,
+  "Carbohydrates": 26,
+  "Kcal": 234
+ },
+ {
+  "Name": "Какао порошок",
+  "Proteins": 23,
+  "Fats": 15,
+  "Carbohydrates": 29,
+  "Kcal": 326
+ },
+ {
+  "Name": "Кальмар",
+  "Proteins": 18,
+  "Fats": 2,
+  "Carbohydrates": 1,
+  "Kcal": 97
+ },
+ {
+  "Name": "Кальмар вареный",
+  "Proteins": 18,
+  "Fats": 3,
+  "Carbohydrates": 1,
+  "Kcal": 103
+ },
+ {
+  "Name": "Каперсы",
+  "Proteins": 2,
+  "Fats": 1,
+  "Carbohydrates": 4,
+  "Kcal": 21
+ },
+ {
+  "Name": "Капуста белокочаная",
+  "Proteins": 2,
+  "Fats": 0,
+  "Carbohydrates": 5,
+  "Kcal": 28
+ },
+ {
+  "Name": "Капуста белокочанная",
+  "Proteins": 2,
+  "Fats": 0,
+  "Carbohydrates": 6,
+  "Kcal": 29
+ },
+ {
+  "Name": "Капуста брокколи замороженая",
+  "Proteins": 2,
+  "Fats": 0,
+  "Carbohydrates": 4,
+  "Kcal": 21
+ },
+ {
+  "Name": "Капуста брюссельская",
+  "Proteins": 4,
+  "Fats": 0,
+  "Carbohydrates": 4,
+  "Kcal": 47
+ },
+ {
+  "Name": "Капуста жареная",
+  "Proteins": 3,
+  "Fats": 6,
+  "Carbohydrates": 8,
+  "Kcal": 88
+ },
+ {
+  "Name": "Капуста квашенная",
+  "Proteins": 2,
+  "Fats": 0,
+  "Carbohydrates": 3,
+  "Kcal": 23
+ },
+ {
+  "Name": "Капуста китайская",
+  "Proteins": 1,
+  "Fats": 0,
+  "Carbohydrates": 2,
+  "Kcal": 16
+ },
+ {
+  "Name": "Капуста кольраби",
+  "Proteins": 3,
+  "Fats": 0,
+  "Carbohydrates": 9,
+  "Kcal": 42
+ },
+ {
+  "Name": "Капуста краснокочанная",
+  "Proteins": 2,
+  "Fats": 0,
+  "Carbohydrates": 6,
+  "Kcal": 29
+ },
+ {
+  "Name": "Капуста морская",
+  "Proteins": 1,
+  "Fats": 5,
+  "Carbohydrates": 0,
+  "Kcal": 58
+ },
+ {
+  "Name": "Капуста пекинская",
+  "Proteins": 2,
+  "Fats": 0,
+  "Carbohydrates": 3,
+  "Kcal": 15
+ },
+ {
+  "Name": "Капуста цветная",
+  "Proteins": 3,
+  "Fats": 0,
+  "Carbohydrates": 5,
+  "Kcal": 34
+ },
+ {
+  "Name": "Картофель",
+  "Proteins": 2,
+  "Fats": 1,
+  "Carbohydrates": 20,
+  "Kcal": 84
+ },
+ {
+  "Name": "Картофель молодой",
+  "Proteins": 2,
+  "Fats": 0,
+  "Carbohydrates": 16,
+  "Kcal": 61
+ },
+ {
+  "Name": "Картофельные хлопья",
+  "Proteins": 8,
+  "Fats": 1,
+  "Carbohydrates": 83,
+  "Kcal": 366
+ },
+ {
+  "Name": "Картофель отварной",
+  "Proteins": 2,
+  "Fats": 1,
+  "Carbohydrates": 16,
+  "Kcal": 83
+ },
+ {
+  "Name": "Картофель печеный",
+  "Proteins": 3,
+  "Fats": 3,
+  "Carbohydrates": 22,
+  "Kcal": 113
+ },
+ {
+  "Name": "Картофель фри",
+  "Proteins": 4,
+  "Fats": 17,
+  "Carbohydrates": 40,
+  "Kcal": 323
+ },
+ {
+  "Name": "Картошка",
+  "Proteins": 2,
+  "Fats": 1,
+  "Carbohydrates": 21,
+  "Kcal": 105
+ },
+ {
+  "Name": "Каша рисовая",
+  "Proteins": 2,
+  "Fats": 3,
+  "Carbohydrates": 26,
+  "Kcal": 130
+ },
+ {
+  "Name": "Квас хлебный",
+  "Proteins": 0,
+  "Fats": 0,
+  "Carbohydrates": 5,
+  "Kcal": 24
+ },
+ {
+  "Name": "Кедровые орехи",
+  "Proteins": 15,
+  "Fats": 63,
+  "Carbohydrates": 17,
+  "Kcal": 652
+ },
+ {
+  "Name": "Кетчуп",
+  "Proteins": 5,
+  "Fats": 1,
+  "Carbohydrates": 16,
+  "Kcal": 90
+ },
+ {
+  "Name": "Кефир 1%",
+  "Proteins": 3,
+  "Fats": 1,
+  "Carbohydrates": 5,
+  "Kcal": 45
+ },
+ {
+  "Name": "Кефир 2,5%",
+  "Proteins": 3,
+  "Fats": 3,
+  "Carbohydrates": 4,
+  "Kcal": 52
+ },
+ {
+  "Name": "Кефир 3,2%",
+  "Proteins": 3,
+  "Fats": 3,
+  "Carbohydrates": 4,
+  "Kcal": 58
+ },
+ {
+  "Name": "Кешью",
+  "Proteins": 21,
+  "Fats": 48,
+  "Carbohydrates": 20,
+  "Kcal": 607
+ },
+ {
+  "Name": "Киви",
+  "Proteins": 1,
+  "Fats": 1,
+  "Carbohydrates": 10,
+  "Kcal": 51
+ },
+ {
+  "Name": "Клубника",
+  "Proteins": 1,
+  "Fats": 0,
+  "Carbohydrates": 7,
+  "Kcal": 32
+ },
+ {
+  "Name": "Клюква",
+  "Proteins": 0,
+  "Fats": 0,
+  "Carbohydrates": 9,
+  "Kcal": 43
+ },
+ {
+  "Name": "Клюква сушеная",
+  "Proteins": 0,
+  "Fats": 1,
+  "Carbohydrates": 70,
+  "Kcal": 305
+ },
+ {
+  "Name": "Козий сыр",
+  "Proteins": 19,
+  "Fats": 23,
+  "Carbohydrates": 2,
+  "Kcal": 296
+ },
+ {
+  "Name": "Колбаса вареная \"докторская\"",
+  "Proteins": 13,
+  "Fats": 22,
+  "Carbohydrates": 1,
+  "Kcal": 254
+ },
+ {
+  "Name": "Конфеты Батончики Рот Фронт с орехами",
+  "Proteins": 12,
+  "Fats": 32,
+  "Carbohydrates": 49,
+  "Kcal": 379
+ },
+ {
+  "Name": "Корень имбиря",
+  "Proteins": 2,
+  "Fats": 1,
+  "Carbohydrates": 18,
+  "Kcal": 90
+ },
+ {
+  "Name": "Корень сельдерея",
+  "Proteins": 1,
+  "Fats": 0,
+  "Carbohydrates": 6,
+  "Kcal": 31
+ },
+ {
+  "Name": "Коричневый сахар",
+  "Proteins": 0,
+  "Fats": 0,
+  "Carbohydrates": 92,
+  "Kcal": 393
+ },
+ {
+  "Name": "Корнишоны маринованные",
+  "Proteins": 1,
+  "Fats": 0,
+  "Carbohydrates": 4,
+  "Kcal": 36
+ },
+ {
+  "Name": "Котлеты полтавские",
+  "Proteins": 26,
+  "Fats": 32,
+  "Carbohydrates": 6,
+  "Kcal": 415
+ },
+ {
+  "Name": "Кофе молотый Арабика",
+  "Proteins": 12,
+  "Fats": 14,
+  "Carbohydrates": 3,
+  "Kcal": 193
+ },
+ {
+  "Name": "Кофе растворимый (сухой)",
+  "Proteins": 15,
+  "Fats": 4,
+  "Carbohydrates": 7,
+  "Kcal": 116
+ },
+ {
+  "Name": "Кофе эспрессо крепкий",
+  "Proteins": 1,
+  "Fats": 2,
+  "Carbohydrates": 0,
+  "Kcal": 19
+ },
+ {
+  "Name": "Кофе \"якобз монарх\" (растворимый)",
+  "Proteins": 15,
+  "Fats": 0,
+  "Carbohydrates": 8,
+  "Kcal": 97
+ },
+ {
+  "Name": "Крабовые палочки",
+  "Proteins": 8,
+  "Fats": 2,
+  "Carbohydrates": 10,
+  "Kcal": 85
+ },
+ {
+  "Name": "Краковская колбаса",
+  "Proteins": 17,
+  "Fats": 39,
+  "Carbohydrates": 0,
+  "Kcal": 420
+ },
+ {
+  "Name": "Красная фасоль консервированная",
+  "Proteins": 7,
+  "Fats": 0,
+  "Carbohydrates": 17,
+  "Kcal": 99
+ },
+ {
+  "Name": "Крахмал картофельный",
+  "Proteins": 0,
+  "Fats": 0,
+  "Carbohydrates": 82,
+  "Kcal": 335
+ },
+ {
+  "Name": "Крахмал кукурузный",
+  "Proteins": 1,
+  "Fats": 0,
+  "Carbohydrates": 87,
+  "Kcal": 348
+ },
+ {
+  "Name": "Краюшка",
+  "Proteins": 9,
+  "Fats": 1,
+  "Carbohydrates": 43,
+  "Kcal": 226
+ },
+ {
+  "Name": "Креветки (отварные)",
+  "Proteins": 18,
+  "Fats": 2,
+  "Carbohydrates": 0,
+  "Kcal": 90
+ },
+ {
+  "Name": "Крупа гречневая",
+  "Proteins": 12,
+  "Fats": 3,
+  "Carbohydrates": 65,
+  "Kcal": 326
+ },
+ {
+  "Name": "Крупа кукурузная",
+  "Proteins": 8,
+  "Fats": 1,
+  "Carbohydrates": 75,
+  "Kcal": 337
+ },
+ {
+  "Name": "Крупа манная",
+  "Proteins": 11,
+  "Fats": 1,
+  "Carbohydrates": 70,
+  "Kcal": 330
+ },
+ {
+  "Name": "Крупа овсяная",
+  "Proteins": 12,
+  "Fats": 6,
+  "Carbohydrates": 65,
+  "Kcal": 342
+ },
+ {
+  "Name": "Крупа перловая",
+  "Proteins": 10,
+  "Fats": 1,
+  "Carbohydrates": 65,
+  "Kcal": 328
+ },
+ {
+  "Name": "Крупа пшеничная",
+  "Proteins": 12,
+  "Fats": 2,
+  "Carbohydrates": 63,
+  "Kcal": 322
+ },
+ {
+  "Name": "Крупа рис длиннозерный пропаренный",
+  "Proteins": 7,
+  "Fats": 1,
+  "Carbohydrates": 74,
+  "Kcal": 333
+ },
+ {
+  "Name": "Крупа рисовая",
+  "Proteins": 7,
+  "Fats": 11,
+  "Carbohydrates": 63,
+  "Kcal": 330
+ },
+ {
+  "Name": "Крупа ячневая",
+  "Proteins": 10,
+  "Fats": 1,
+  "Carbohydrates": 59,
+  "Kcal": 318
+ },
+ {
+  "Name": "Крыжовник",
+  "Proteins": 1,
+  "Fats": 0,
+  "Carbohydrates": 10,
+  "Kcal": 41
+ },
+ {
+  "Name": "Кукуруза консервированная",
+  "Proteins": 3,
+  "Fats": 2,
+  "Carbohydrates": 17,
+  "Kcal": 87
+ },
+ {
+  "Name": "Кукурузные хлопья",
+  "Proteins": 6,
+  "Fats": 3,
+  "Carbohydrates": 73,
+  "Kcal": 353
+ },
+ {
+  "Name": "Кунжут",
+  "Proteins": 20,
+  "Fats": 50,
+  "Carbohydrates": 11,
+  "Kcal": 562
+ },
+ {
+  "Name": "Курага",
+  "Proteins": 5,
+  "Fats": 0,
+  "Carbohydrates": 54,
+  "Kcal": 232
+ },
+ {
+  "Name": "Куриная печень",
+  "Proteins": 19,
+  "Fats": 7,
+  "Carbohydrates": 1,
+  "Kcal": 140
+ },
+ {
+  "Name": "Куриные грудки",
+  "Proteins": 23,
+  "Fats": 6,
+  "Carbohydrates": 3,
+  "Kcal": 144
+ },
+ {
+  "Name": "Куриные окорочка",
+  "Proteins": 18,
+  "Fats": 11,
+  "Carbohydrates": 0,
+  "Kcal": 170
+ },
+ {
+  "Name": "Курица",
+  "Proteins": 21,
+  "Fats": 11,
+  "Carbohydrates": 1,
+  "Kcal": 186
+ },
+ {
+  "Name": "Кус-Кус (крупа)",
+  "Proteins": 13,
+  "Fats": 1,
+  "Carbohydrates": 77,
+  "Kcal": 373
+ },
+ {
+  "Name": "Лаваш грузинский",
+  "Proteins": 8,
+  "Fats": 2,
+  "Carbohydrates": 53,
+  "Kcal": 269
+ },
+ {
+  "Name": "Лайм",
+  "Proteins": 1,
+  "Fats": 0,
+  "Carbohydrates": 4,
+  "Kcal": 20
+ },
+ {
+  "Name": "Лапша гречневая",
+  "Proteins": 15,
+  "Fats": 1,
+  "Carbohydrates": 71,
+  "Kcal": 348
+ },
+ {
+  "Name": "Лапша рисовая",
+  "Proteins": 5,
+  "Fats": 1,
+  "Carbohydrates": 81,
+  "Kcal": 350
+ },
+ {
+  "Name": "Лапша яичная",
+  "Proteins": 10,
+  "Fats": 2,
+  "Carbohydrates": 64,
+  "Kcal": 330
+ },
+ {
+  "Name": "Лимон",
+  "Proteins": 1,
+  "Fats": 0,
+  "Carbohydrates": 4,
+  "Kcal": 27
+ },
+ {
+  "Name": "Лимонный сок",
+  "Proteins": 1,
+  "Fats": 0,
+  "Carbohydrates": 4,
+  "Kcal": 20
+ },
+ {
+  "Name": "Лосось",
+  "Proteins": 21,
+  "Fats": 10,
+  "Carbohydrates": 1,
+  "Kcal": 172
+ },
+ {
+  "Name": "Лук",
+  "Proteins": 1,
+  "Fats": 0,
+  "Carbohydrates": 9,
+  "Kcal": 40
+ },
+ {
+  "Name": "Лук зелёный перо",
+  "Proteins": 1,
+  "Fats": 0,
+  "Carbohydrates": 5,
+  "Kcal": 16
+ },
+ {
+  "Name": "Лук красный салатный",
+  "Proteins": 1,
+  "Fats": 0,
+  "Carbohydrates": 9,
+  "Kcal": 42
+ },
+ {
+  "Name": "Льняное масло",
+  "Proteins": 1,
+  "Fats": 92,
+  "Carbohydrates": 4,
+  "Kcal": 849
+ },
+ {
+  "Name": "Майонез",
+  "Proteins": 2,
+  "Fats": 57,
+  "Carbohydrates": 4,
+  "Kcal": 550
+ },
+ {
+  "Name": "Майонез 15%",
+  "Proteins": 0,
+  "Fats": 15,
+  "Carbohydrates": 5,
+  "Kcal": 156
+ },
+ {
+  "Name": "Майонез провансаль 67%",
+  "Proteins": 3,
+  "Fats": 369,
+  "Carbohydrates": 25,
+  "Kcal": 619
+ },
+ {
+  "Name": "Мак",
+  "Proteins": 17,
+  "Fats": 46,
+  "Carbohydrates": 8,
+  "Kcal": 519
+ },
+ {
+  "Name": "Макаронные изделия",
+  "Proteins": 10,
+  "Fats": 0,
+  "Carbohydrates": 72,
+  "Kcal": 344
+ },
+ {
+  "Name": "Макароны отварные",
+  "Proteins": 4,
+  "Fats": 1,
+  "Carbohydrates": 23,
+  "Kcal": 119
+ },
+ {
+  "Name": "Малина",
+  "Proteins": 4,
+  "Fats": 0,
+  "Carbohydrates": 9,
+  "Kcal": 41
+ },
+ {
+  "Name": "Манго",
+  "Proteins": 1,
+  "Fats": 0,
+  "Carbohydrates": 13,
+  "Kcal": 62
+ },
+ {
+  "Name": "Манго цукаты",
+  "Proteins": 0,
+  "Fats": 0,
+  "Carbohydrates": 60,
+  "Kcal": 278
+ },
+ {
+  "Name": "Мандарин",
+  "Proteins": 1,
+  "Fats": 1,
+  "Carbohydrates": 9,
+  "Kcal": 40
+ },
+ {
+  "Name": "Манная крупа",
+  "Proteins": 11,
+  "Fats": 1,
+  "Carbohydrates": 68,
+  "Kcal": 334
+ },
+ {
+  "Name": "Маргарин молочный",
+  "Proteins": 0,
+  "Fats": 82,
+  "Carbohydrates": 6,
+  "Kcal": 745
+ },
+ {
+  "Name": "Маргарин солнечный",
+  "Proteins": 0,
+  "Fats": 72,
+  "Carbohydrates": 0,
+  "Kcal": 653
+ },
+ {
+  "Name": "Мармелад",
+  "Proteins": 1,
+  "Fats": 0,
+  "Carbohydrates": 75,
+  "Kcal": 302
+ },
+ {
+  "Name": "Маслины",
+  "Proteins": 1,
+  "Fats": 14,
+  "Carbohydrates": 10,
+  "Kcal": 167
+ },
+ {
+  "Name": "Маслины без косточки",
+  "Proteins": 1,
+  "Fats": 13,
+  "Carbohydrates": 2,
+  "Kcal": 133
+ },
+ {
+  "Name": "Масло кукурузное",
+  "Proteins": 1,
+  "Fats": 101,
+  "Carbohydrates": 0,
+  "Kcal": 916
+ },
+ {
+  "Name": "Масло льняное",
+  "Proteins": 0,
+  "Fats": 96,
+  "Carbohydrates": 0,
+  "Kcal": 895
+ },
+ {
+  "Name": "Масло оливковое",
+  "Proteins": 1,
+  "Fats": 91,
+  "Carbohydrates": 3,
+  "Kcal": 851
+ },
+ {
+  "Name": "Масло подсолнечное",
+  "Proteins": 0,
+  "Fats": 96,
+  "Carbohydrates": 0,
+  "Kcal": 864
+ },
+ {
+  "Name": "Масло растительное",
+  "Proteins": 2,
+  "Fats": 97,
+  "Carbohydrates": 0,
+  "Kcal": 897
+ },
+ {
+  "Name": "Масло сливочное",
+  "Proteins": 1,
+  "Fats": 74,
+  "Carbohydrates": 1,
+  "Kcal": 674
+ },
+ {
+  "Name": "Масло топленое",
+  "Proteins": 0,
+  "Fats": 86,
+  "Carbohydrates": 0,
+  "Kcal": 890
+ },
+ {
+  "Name": "Мед",
+  "Proteins": 1,
+  "Fats": 0,
+  "Carbohydrates": 80,
+  "Kcal": 315
+ },
+ {
+  "Name": "Миндаль",
+  "Proteins": 18,
+  "Fats": 51,
+  "Carbohydrates": 16,
+  "Kcal": 601
+ },
+ {
+  "Name": "Молоко",
+  "Proteins": 7,
+  "Fats": 3,
+  "Carbohydrates": 7,
+  "Kcal": 66
+ },
+ {
+  "Name": "Молоко 0,5%",
+  "Proteins": 2,
+  "Fats": 1,
+  "Carbohydrates": 3,
+  "Kcal": 35
+ },
+ {
+  "Name": "Молоко 1,5%",
+  "Proteins": 3,
+  "Fats": 2,
+  "Carbohydrates": 5,
+  "Kcal": 44
+ },
+ {
+  "Name": "Молоко 2,5%",
+  "Proteins": 3,
+  "Fats": 3,
+  "Carbohydrates": 7,
+  "Kcal": 64
+ },
+ {
+  "Name": "Молоко 3,2%",
+  "Proteins": 3,
+  "Fats": 3,
+  "Carbohydrates": 8,
+  "Kcal": 67
+ },
+ {
+  "Name": "Молоко сгущёное",
+  "Proteins": 7,
+  "Fats": 9,
+  "Carbohydrates": 56,
+  "Kcal": 317
+ },
+ {
+  "Name": "Молоко сухое",
+  "Proteins": 31,
+  "Fats": 22,
+  "Carbohydrates": 36,
+  "Kcal": 446
+ },
+ {
+  "Name": "Морковь отварная",
+  "Proteins": 1,
+  "Fats": 0,
+  "Carbohydrates": 7,
+  "Kcal": 32
+ },
+ {
+  "Name": "Морковь печеная",
+  "Proteins": 1,
+  "Fats": 0,
+  "Carbohydrates": 7,
+  "Kcal": 31
+ },
+ {
+  "Name": "Морковь свежая",
+  "Proteins": 1,
+  "Fats": 0,
+  "Carbohydrates": 8,
+  "Kcal": 35
+ },
+ {
+  "Name": "Мороженое Пломбир",
+  "Proteins": 4,
+  "Fats": 15,
+  "Carbohydrates": 24,
+  "Kcal": 245
+ },
+ {
+  "Name": "Морская капуста",
+  "Proteins": 1,
+  "Fats": 2,
+  "Carbohydrates": 2,
+  "Kcal": 37
+ },
+ {
+  "Name": "Мука кукурузная",
+  "Proteins": 9,
+  "Fats": 3,
+  "Carbohydrates": 65,
+  "Kcal": 333
+ },
+ {
+  "Name": "Мука пшеничная в\/с",
+  "Proteins": 10,
+  "Fats": 1,
+  "Carbohydrates": 71,
+  "Kcal": 332
+ },
+ {
+  "Name": "Мука ржаная",
+  "Proteins": 8,
+  "Fats": 2,
+  "Carbohydrates": 65,
+  "Kcal": 307
+ },
+ {
+  "Name": "Мюстли с фруктами",
+  "Proteins": 8,
+  "Fats": 2,
+  "Carbohydrates": 68,
+  "Kcal": 314
+ },
+ {
+  "Name": "Мясо свинина",
+  "Proteins": 26,
+  "Fats": 29,
+  "Carbohydrates": 7,
+  "Kcal": 293
+ },
+ {
+  "Name": "Мясо свинина постная",
+  "Proteins": 18,
+  "Fats": 8,
+  "Carbohydrates": 0,
+  "Kcal": 151
+ },
+ {
+  "Name": "Нектарин",
+  "Proteins": 1,
+  "Fats": 0,
+  "Carbohydrates": 11,
+  "Kcal": 47
+ },
+ {
+  "Name": "Облепиха",
+  "Proteins": 1,
+  "Fats": 2,
+  "Carbohydrates": 6,
+  "Kcal": 47
+ },
+ {
+  "Name": "Овощная смесь “Весенние овощи”",
+  "Proteins": 3,
+  "Fats": 0,
+  "Carbohydrates": 4,
+  "Kcal": 30
+ },
+ {
+  "Name": "Овсяная мука",
+  "Proteins": 13,
+  "Fats": 7,
+  "Carbohydrates": 65,
+  "Kcal": 368
+ },
+ {
+  "Name": "Овсянка",
+  "Proteins": 9,
+  "Fats": 5,
+  "Carbohydrates": 46,
+  "Kcal": 271
+ },
+ {
+  "Name": "Овсянные хлопья \"геркулес\"",
+  "Proteins": 11,
+  "Fats": 6,
+  "Carbohydrates": 51,
+  "Kcal": 305
+ },
+ {
+  "Name": "Огурцы",
+  "Proteins": 1,
+  "Fats": 0,
+  "Carbohydrates": 4,
+  "Kcal": 19
+ },
+ {
+  "Name": "Огурцы грунтовые",
+  "Proteins": 1,
+  "Fats": 0,
+  "Carbohydrates": 3,
+  "Kcal": 14
+ },
+ {
+  "Name": "Огурцы маринованные",
+  "Proteins": 2,
+  "Fats": 0,
+  "Carbohydrates": 2,
+  "Kcal": 16
+ },
+ {
+  "Name": "Огурцы солёные",
+  "Proteins": 1,
+  "Fats": 0,
+  "Carbohydrates": 2,
+  "Kcal": 14
+ },
+ {
+  "Name": "Оливки",
+  "Proteins": 1,
+  "Fats": 17,
+  "Carbohydrates": 5,
+  "Kcal": 178
+ },
+ {
+  "Name": "Оливки зеленые без косточки",
+  "Proteins": 1,
+  "Fats": 17,
+  "Carbohydrates": 0,
+  "Kcal": 157
+ },
+ {
+  "Name": "Омлет",
+  "Proteins": 10,
+  "Fats": 14,
+  "Carbohydrates": 3,
+  "Kcal": 175
+ },
+ {
+  "Name": "Орех грецкий",
+  "Proteins": 15,
+  "Fats": 64,
+  "Carbohydrates": 11,
+  "Kcal": 671
+ },
+ {
+  "Name": "Отруби овсяные",
+  "Proteins": 15,
+  "Fats": 7,
+  "Carbohydrates": 45,
+  "Kcal": 305
+ },
+ {
+  "Name": "Отруби пшеничные очищенные",
+  "Proteins": 13,
+  "Fats": 4,
+  "Carbohydrates": 23,
+  "Kcal": 214
+ },
+ {
+  "Name": "Отруби ржаные очищенные",
+  "Proteins": 12,
+  "Fats": 3,
+  "Carbohydrates": 9,
+  "Kcal": 167
+ },
+ {
+  "Name": "Паприка",
+  "Proteins": 3,
+  "Fats": 2,
+  "Carbohydrates": 7,
+  "Kcal": 112
+ },
+ {
+  "Name": "Патиссон",
+  "Proteins": 1,
+  "Fats": 0,
+  "Carbohydrates": 4,
+  "Kcal": 19
+ },
+ {
+  "Name": "Перепелиное яйцо",
+  "Proteins": 13,
+  "Fats": 13,
+  "Carbohydrates": 0,
+  "Kcal": 167
+ },
+ {
+  "Name": "Перец сладкий",
+  "Proteins": 1,
+  "Fats": 0,
+  "Carbohydrates": 5,
+  "Kcal": 26
+ },
+ {
+  "Name": "Перец чили",
+  "Proteins": 2,
+  "Fats": 0,
+  "Carbohydrates": 9,
+  "Kcal": 40
+ },
+ {
+  "Name": "Перловка (крупа)",
+  "Proteins": 10,
+  "Fats": 1,
+  "Carbohydrates": 76,
+  "Kcal": 346
+ },
+ {
+  "Name": "Перловка отварная",
+  "Proteins": 2,
+  "Fats": 0,
+  "Carbohydrates": 27,
+  "Kcal": 121
+ },
+ {
+  "Name": "Персики",
+  "Proteins": 1,
+  "Fats": 1,
+  "Carbohydrates": 12,
+  "Kcal": 51
+ },
+ {
+  "Name": "Персики (сухофрукты)",
+  "Proteins": 2,
+  "Fats": 0,
+  "Carbohydrates": 42,
+  "Kcal": 168
+ },
+ {
+  "Name": "Петрушка корень",
+  "Proteins": 2,
+  "Fats": 0,
+  "Carbohydrates": 11,
+  "Kcal": 48
+ },
+ {
+  "Name": "Петрушка свежая",
+  "Proteins": 3,
+  "Fats": 1,
+  "Carbohydrates": 7,
+  "Kcal": 38
+ },
+ {
+  "Name": "Печенье \"Юбилейное\" Молочное",
+  "Proteins": 8,
+  "Fats": 18,
+  "Carbohydrates": 66,
+  "Kcal": 455
+ },
+ {
+  "Name": "Печень куриная",
+  "Proteins": 27,
+  "Fats": 7,
+  "Carbohydrates": 1,
+  "Kcal": 144
+ },
+ {
+  "Name": "Пиво светлое",
+  "Proteins": 0,
+  "Fats": 0,
+  "Carbohydrates": 4,
+  "Kcal": 50
+ },
+ {
+  "Name": "Плавленный сыр",
+  "Proteins": 15,
+  "Fats": 20,
+  "Carbohydrates": 2,
+  "Kcal": 280
+ },
+ {
+  "Name": "Помидоры консервированные",
+  "Proteins": 1,
+  "Fats": 0,
+  "Carbohydrates": 5,
+  "Kcal": 23
+ },
+ {
+  "Name": "Помидоры свежие",
+  "Proteins": 4,
+  "Fats": 1,
+  "Carbohydrates": 3,
+  "Kcal": 33
+ },
+ {
+  "Name": "Простокваша",
+  "Proteins": 3,
+  "Fats": 3,
+  "Carbohydrates": 4,
+  "Kcal": 52
+ },
+ {
+  "Name": "Пшено",
+  "Proteins": 11,
+  "Fats": 3,
+  "Carbohydrates": 68,
+  "Kcal": 337
+ },
+ {
+  "Name": "Ревень черешковый",
+  "Proteins": 1,
+  "Fats": 0,
+  "Carbohydrates": 4,
+  "Kcal": 16
+ },
+ {
+  "Name": "Редис",
+  "Proteins": 1,
+  "Fats": 0,
+  "Carbohydrates": 4,
+  "Kcal": 20
+ },
+ {
+  "Name": "Редька",
+  "Proteins": 2,
+  "Fats": 0,
+  "Carbohydrates": 7,
+  "Kcal": 35
+ },
+ {
+  "Name": "Редька зеленая",
+  "Proteins": 2,
+  "Fats": 0,
+  "Carbohydrates": 7,
+  "Kcal": 35
+ },
+ {
+  "Name": "Репа",
+  "Proteins": 1,
+  "Fats": 0,
+  "Carbohydrates": 5,
+  "Kcal": 29
+ },
+ {
+  "Name": "Рис",
+  "Proteins": 7,
+  "Fats": 1,
+  "Carbohydrates": 75,
+  "Kcal": 331
+ },
+ {
+  "Name": "Рис отварной",
+  "Proteins": 4,
+  "Fats": 1,
+  "Carbohydrates": 25,
+  "Kcal": 134
+ },
+ {
+  "Name": "Рожки отварные",
+  "Proteins": 3,
+  "Fats": 0,
+  "Carbohydrates": 24,
+  "Kcal": 115
+ },
+ {
+  "Name": "Рожки (сухой продукт)",
+  "Proteins": 11,
+  "Fats": 1,
+  "Carbohydrates": 72,
+  "Kcal": 344
+ },
+ {
+  "Name": "Руккола",
+  "Proteins": 2,
+  "Fats": 1,
+  "Carbohydrates": 2,
+  "Kcal": 24
+ },
+ {
+  "Name": "Рыба скумбрия",
+  "Proteins": 16,
+  "Fats": 13,
+  "Carbohydrates": 1,
+  "Kcal": 187
+ },
+ {
+  "Name": "Рыба треска",
+  "Proteins": 17,
+  "Fats": 1,
+  "Carbohydrates": 0,
+  "Kcal": 80
+ },
+ {
+  "Name": "Рябина черноплодная",
+  "Proteins": 2,
+  "Fats": 0,
+  "Carbohydrates": 12,
+  "Kcal": 54
+ },
+ {
+  "Name": "Ряженка",
+  "Proteins": 3,
+  "Fats": 3,
+  "Carbohydrates": 4,
+  "Kcal": 62
+ },
+ {
+  "Name": "Салат лист",
+  "Proteins": 1,
+  "Fats": 0,
+  "Carbohydrates": 2,
+  "Kcal": 16
+ },
+ {
+  "Name": "Сахар песок",
+  "Proteins": 0,
+  "Fats": 0,
+  "Carbohydrates": 109,
+  "Kcal": 396
+ },
+ {
+  "Name": "Свежая капуста",
+  "Proteins": 2,
+  "Fats": 0,
+  "Carbohydrates": 5,
+  "Kcal": 25
+ },
+ {
+  "Name": "Свежий укроп",
+  "Proteins": 3,
+  "Fats": 1,
+  "Carbohydrates": 6,
+  "Kcal": 38
+ },
+ {
+  "Name": "Свекла",
+  "Proteins": 2,
+  "Fats": 1,
+  "Carbohydrates": 12,
+  "Kcal": 61
+ },
+ {
+  "Name": "Свекла отварная",
+  "Proteins": 2,
+  "Fats": 0,
+  "Carbohydrates": 10,
+  "Kcal": 50
+ },
+ {
+  "Name": "Свинина",
+  "Proteins": 16,
+  "Fats": 27,
+  "Carbohydrates": 0,
+  "Kcal": 304
+ },
+ {
+  "Name": "Сельдерей",
+  "Proteins": 1,
+  "Fats": 0,
+  "Carbohydrates": 3,
+  "Kcal": 13
+ },
+ {
+  "Name": "Сельдерей стебель",
+  "Proteins": 1,
+  "Fats": 0,
+  "Carbohydrates": 2,
+  "Kcal": 11
+ },
+ {
+  "Name": "Сельдь атлантическая жирная",
+  "Proteins": 15,
+  "Fats": 15,
+  "Carbohydrates": 0,
+  "Kcal": 204
+ },
+ {
+  "Name": "Семена тыквы неочищенные с солью",
+  "Proteins": 29,
+  "Fats": 47,
+  "Carbohydrates": 13,
+  "Kcal": 596
+ },
+ {
+  "Name": "Семечки подсолнечные",
+  "Proteins": 26,
+  "Fats": 50,
+  "Carbohydrates": 9,
+  "Kcal": 583
+ },
+ {
+  "Name": "Сладкая кукуруза в початках",
+  "Proteins": 4,
+  "Fats": 3,
+  "Carbohydrates": 21,
+  "Kcal": 124
+ },
+ {
+  "Name": "Слива садовая",
+  "Proteins": 1,
+  "Fats": 0,
+  "Carbohydrates": 10,
+  "Kcal": 45
+ },
+ {
+  "Name": "Сливки 10%",
+  "Proteins": 3,
+  "Fats": 10,
+  "Carbohydrates": 4,
+  "Kcal": 118
+ },
+ {
+  "Name": "Сливки 20%",
+  "Proteins": 3,
+  "Fats": 20,
+  "Carbohydrates": 4,
+  "Kcal": 206
+ },
+ {
+  "Name": "Сливки 22%",
+  "Proteins": 3,
+  "Fats": 22,
+  "Carbohydrates": 4,
+  "Kcal": 224
+ },
+ {
+  "Name": "Сливки 33%",
+  "Proteins": 2,
+  "Fats": 33,
+  "Carbohydrates": 4,
+  "Kcal": 322
+ },
+ {
+  "Name": "Смесь орехов и сухофруктов экзотик",
+  "Proteins": 8,
+  "Fats": 26,
+  "Carbohydrates": 52,
+  "Kcal": 466
+ },
+ {
+  "Name": "Сметана 10 %",
+  "Proteins": 3,
+  "Fats": 10,
+  "Carbohydrates": 4,
+  "Kcal": 117
+ },
+ {
+  "Name": "Сметана 15%",
+  "Proteins": 3,
+  "Fats": 15,
+  "Carbohydrates": 4,
+  "Kcal": 159
+ },
+ {
+  "Name": "Сметана 20%",
+  "Proteins": 3,
+  "Fats": 19,
+  "Carbohydrates": 6,
+  "Kcal": 204
+ },
+ {
+  "Name": "Сметана 30 %",
+  "Proteins": 2,
+  "Fats": 30,
+  "Carbohydrates": 3,
+  "Kcal": 291
+ },
+ {
+  "Name": "Смородина красная",
+  "Proteins": 1,
+  "Fats": 0,
+  "Carbohydrates": 8,
+  "Kcal": 40
+ },
+ {
+  "Name": "Смородина чёрная",
+  "Proteins": 1,
+  "Fats": 0,
+  "Carbohydrates": 9,
+  "Kcal": 41
+ },
+ {
+  "Name": "Соевый соус",
+  "Proteins": 5,
+  "Fats": 0,
+  "Carbohydrates": 22,
+  "Kcal": 36
+ },
+ {
+  "Name": "Сок апельсиновый",
+  "Proteins": 1,
+  "Fats": 0,
+  "Carbohydrates": 11,
+  "Kcal": 47
+ },
+ {
+  "Name": "Сок грейпфрутовый",
+  "Proteins": 0,
+  "Fats": 0,
+  "Carbohydrates": 10,
+  "Kcal": 44
+ },
+ {
+  "Name": "Сок лайма",
+  "Proteins": 1,
+  "Fats": 0,
+  "Carbohydrates": 6,
+  "Kcal": 22
+ },
+ {
+  "Name": "Сок лимона",
+  "Proteins": 1,
+  "Fats": 0,
+  "Carbohydrates": 3,
+  "Kcal": 18
+ },
+ {
+  "Name": "Сок лимонный",
+  "Proteins": 1,
+  "Fats": 0,
+  "Carbohydrates": 5,
+  "Kcal": 29
+ },
+ {
+  "Name": "Сок мандарина",
+  "Proteins": 1,
+  "Fats": 0,
+  "Carbohydrates": 10,
+  "Kcal": 43
+ },
+ {
+  "Name": "Сок свекольный",
+  "Proteins": 1,
+  "Fats": 0,
+  "Carbohydrates": 14,
+  "Kcal": 61
+ },
+ {
+  "Name": "Сок томатный",
+  "Proteins": 0,
+  "Fats": 0,
+  "Carbohydrates": 5,
+  "Kcal": 21
+ },
+ {
+  "Name": "Сок яблочный",
+  "Proteins": 0,
+  "Fats": 0,
+  "Carbohydrates": 10,
+  "Kcal": 44
+ },
+ {
+  "Name": "Соленый огурец",
+  "Proteins": 1,
+  "Fats": 0,
+  "Carbohydrates": 3,
+  "Kcal": 14
+ },
+ {
+  "Name": "Соус соевый",
+  "Proteins": 4,
+  "Fats": 0,
+  "Carbohydrates": 10,
+  "Kcal": 53
+ },
+ {
+  "Name": "Соя",
+  "Proteins": 34,
+  "Fats": 12,
+  "Carbohydrates": 27,
+  "Kcal": 359
+ },
+ {
+  "Name": "Спагетти отварные",
+  "Proteins": 7,
+  "Fats": 1,
+  "Carbohydrates": 46,
+  "Kcal": 223
+ },
+ {
+  "Name": "Спагетти (сухой продукт)",
+  "Proteins": 10,
+  "Fats": 1,
+  "Carbohydrates": 72,
+  "Kcal": 344
+ },
+ {
+  "Name": "Сухари панировочные",
+  "Proteins": 12,
+  "Fats": 2,
+  "Carbohydrates": 74,
+  "Kcal": 362
+ },
+ {
+  "Name": "Сыворотка",
+  "Proteins": 1,
+  "Fats": 0,
+  "Carbohydrates": 4,
+  "Kcal": 22
+ },
+ {
+  "Name": "Сыр 45%",
+  "Proteins": 26,
+  "Fats": 26,
+  "Carbohydrates": 0,
+  "Kcal": 336
+ },
+ {
+  "Name": "Сыр 50% «Сливочный»",
+  "Proteins": 23,
+  "Fats": 28,
+  "Carbohydrates": 0,
+  "Kcal": 288
+ },
+ {
+  "Name": "Сыр Адыгейский",
+  "Proteins": 18,
+  "Fats": 16,
+  "Carbohydrates": 0,
+  "Kcal": 224
+ },
+ {
+  "Name": "Сыр гауда",
+  "Proteins": 24,
+  "Fats": 27,
+  "Carbohydrates": 2,
+  "Kcal": 350
+ },
+ {
+  "Name": "Сыр «Лёгкий»",
+  "Proteins": 23,
+  "Fats": 17,
+  "Carbohydrates": 0,
+  "Kcal": 300
+ },
+ {
+  "Name": "Сырок плавленный \"Дружба\"",
+  "Proteins": 6,
+  "Fats": 19,
+  "Carbohydrates": 0,
+  "Kcal": 178
+ },
+ {
+  "Name": "Сыр \"российский\"",
+  "Proteins": 23,
+  "Fats": 29,
+  "Carbohydrates": 0,
+  "Kcal": 361
+ },
+ {
+  "Name": "Сыр твердый",
+  "Proteins": 25,
+  "Fats": 27,
+  "Carbohydrates": 2,
+  "Kcal": 358
+ },
+ {
+  "Name": "Тархун",
+  "Proteins": 0,
+  "Fats": 0,
+  "Carbohydrates": 10,
+  "Kcal": 41
+ },
+ {
+  "Name": "Творог 0%",
+  "Proteins": 16,
+  "Fats": 0,
+  "Carbohydrates": 2,
+  "Kcal": 75
+ },
+ {
+  "Name": "Творог 1%",
+  "Proteins": 17,
+  "Fats": 1,
+  "Carbohydrates": 2,
+  "Kcal": 82
+ },
+ {
+  "Name": "Творог 10%",
+  "Proteins": 15,
+  "Fats": 9,
+  "Carbohydrates": 2,
+  "Kcal": 150
+ },
+ {
+  "Name": "Творог 5 %",
+  "Proteins": 17,
+  "Fats": 5,
+  "Carbohydrates": 2,
+  "Kcal": 122
+ },
+ {
+  "Name": "Творог 9%",
+  "Proteins": 16,
+  "Fats": 8,
+  "Carbohydrates": 3,
+  "Kcal": 153
+ },
+ {
+  "Name": "Творожная масса с цукатами",
+  "Proteins": 7,
+  "Fats": 21,
+  "Carbohydrates": 33,
+  "Kcal": 349
+ },
+ {
+  "Name": "Тесто дрожжевое",
+  "Proteins": 7,
+  "Fats": 4,
+  "Carbohydrates": 43,
+  "Kcal": 238
+ },
+ {
+  "Name": "Тесто слоеное дрожжевое",
+  "Proteins": 7,
+  "Fats": 19,
+  "Carbohydrates": 40,
+  "Kcal": 356
+ },
+ {
+  "Name": "Тесто слоёное бездрожжевое",
+  "Proteins": 6,
+  "Fats": 18,
+  "Carbohydrates": 38,
+  "Kcal": 335
+ },
+ {
+  "Name": "Томат",
+  "Proteins": 1,
+  "Fats": 0,
+  "Carbohydrates": 5,
+  "Kcal": 27
+ },
+ {
+  "Name": "Томатная паста помидорка",
+  "Proteins": 1,
+  "Fats": 0,
+  "Carbohydrates": 15,
+  "Kcal": 77
+ },
+ {
+  "Name": "Томатный сок",
+  "Proteins": 1,
+  "Fats": 0,
+  "Carbohydrates": 4,
+  "Kcal": 25
+ },
+ {
+  "Name": "Томаты (парниковые)",
+  "Proteins": 1,
+  "Fats": 0,
+  "Carbohydrates": 3,
+  "Kcal": 14
+ },
+ {
+  "Name": "Томаты черри",
+  "Proteins": 1,
+  "Fats": 0,
+  "Carbohydrates": 3,
+  "Kcal": 17
+ },
+ {
+  "Name": "Треска филе",
+  "Proteins": 17,
+  "Fats": 1,
+  "Carbohydrates": 0,
+  "Kcal": 78
+ },
+ {
+  "Name": "Тушенка говядина высший сорт",
+  "Proteins": 15,
+  "Fats": 17,
+  "Carbohydrates": 0,
+  "Kcal": 213
+ },
+ {
+  "Name": "Тыква",
+  "Proteins": 1,
+  "Fats": 0,
+  "Carbohydrates": 5,
+  "Kcal": 22
+ },
+ {
+  "Name": "Укроп",
+  "Proteins": 3,
+  "Fats": 1,
+  "Carbohydrates": 6,
+  "Kcal": 38
+ },
+ {
+  "Name": "Уксус столовый 6-7%",
+  "Proteins": 0,
+  "Fats": 0,
+  "Carbohydrates": 6,
+  "Kcal": 13
+ },
+ {
+  "Name": "Урюк (сухофрукты)",
+  "Proteins": 5,
+  "Fats": 0,
+  "Carbohydrates": 51,
+  "Kcal": 213
+ },
+ {
+  "Name": "Фарш говяжий",
+  "Proteins": 18,
+  "Fats": 16,
+  "Carbohydrates": 0,
+  "Kcal": 214
+ },
+ {
+  "Name": "Фарш куриный",
+  "Proteins": 19,
+  "Fats": 10,
+  "Carbohydrates": 0,
+  "Kcal": 166
+ },
+ {
+  "Name": "Фасоль",
+  "Proteins": 18,
+  "Fats": 1,
+  "Carbohydrates": 44,
+  "Kcal": 263
+ },
+ {
+  "Name": "Фасоль «Бондюэль»",
+  "Proteins": 7,
+  "Fats": 0,
+  "Carbohydrates": 10,
+  "Kcal": 74
+ },
+ {
+  "Name": "Фасоль стручковая",
+  "Proteins": 2,
+  "Fats": 0,
+  "Carbohydrates": 4,
+  "Kcal": 29
+ },
+ {
+  "Name": "Фасоль стручковая замороженная",
+  "Proteins": 2,
+  "Fats": 0,
+  "Carbohydrates": 4,
+  "Kcal": 26
+ },
+ {
+  "Name": "Фасоль Фрау Марта",
+  "Proteins": 6,
+  "Fats": 1,
+  "Carbohydrates": 16,
+  "Kcal": 92
+ },
+ {
+  "Name": "Фасоль \"Фрау Марта\" в томатном соусе",
+  "Proteins": 5,
+  "Fats": 0,
+  "Carbohydrates": 15,
+  "Kcal": 86
+ },
+ {
+  "Name": "Фасоль Фрау Марта Лобио",
+  "Proteins": 5,
+  "Fats": 1,
+  "Carbohydrates": 13,
+  "Kcal": 80
+ },
+ {
+  "Name": "Фенхель",
+  "Proteins": 1,
+  "Fats": 0,
+  "Carbohydrates": 7,
+  "Kcal": 31
+ },
+ {
+  "Name": "Филе куринное",
+  "Proteins": 23,
+  "Fats": 2,
+  "Carbohydrates": 0,
+  "Kcal": 114
+ },
+ {
+  "Name": "Филе куриной грудки",
+  "Proteins": 22,
+  "Fats": 2,
+  "Carbohydrates": 0,
+  "Kcal": 109
+ },
+ {
+  "Name": "Финики (сухофрукты)",
+  "Proteins": 2,
+  "Fats": 0,
+  "Carbohydrates": 72,
+  "Kcal": 280
+ },
+ {
+  "Name": "Фруктоза",
+  "Proteins": 0,
+  "Fats": 0,
+  "Carbohydrates": 100,
+  "Kcal": 390
+ },
+ {
+  "Name": "Фундук",
+  "Proteins": 15,
+  "Fats": 62,
+  "Carbohydrates": 11,
+  "Kcal": 665
+ },
+ {
+  "Name": "Хлеб белый",
+  "Proteins": 8,
+  "Fats": 3,
+  "Carbohydrates": 54,
+  "Kcal": 254
+ },
+ {
+  "Name": "Хлеб \"бородинский\"",
+  "Proteins": 7,
+  "Fats": 1,
+  "Carbohydrates": 42,
+  "Kcal": 210
+ },
+ {
+  "Name": "Хлеб пшеничный",
+  "Proteins": 8,
+  "Fats": 3,
+  "Carbohydrates": 50,
+  "Kcal": 263
+ },
+ {
+  "Name": "Хлеб ржаной",
+  "Proteins": 7,
+  "Fats": 1,
+  "Carbohydrates": 36,
+  "Kcal": 187
+ },
+ {
+  "Name": "Хлебцы пшеничные",
+  "Proteins": 12,
+  "Fats": 2,
+  "Carbohydrates": 60,
+  "Kcal": 305
+ },
+ {
+  "Name": "Хлопья кукурузные",
+  "Proteins": 7,
+  "Fats": 1,
+  "Carbohydrates": 84,
+  "Kcal": 373
+ },
+ {
+  "Name": "Хлопья овсяные",
+  "Proteins": 12,
+  "Fats": 6,
+  "Carbohydrates": 52,
+  "Kcal": 308
+ },
+ {
+  "Name": "Хрен",
+  "Proteins": 3,
+  "Fats": 5,
+  "Carbohydrates": 14,
+  "Kcal": 113
+ },
+ {
+  "Name": "Хурма",
+  "Proteins": 1,
+  "Fats": 0,
+  "Carbohydrates": 15,
+  "Kcal": 65
+ },
+ {
+  "Name": "Цветная капуста отварная",
+  "Proteins": 2,
+  "Fats": 0,
+  "Carbohydrates": 4,
+  "Kcal": 29
+ },
+ {
+  "Name": "Цедра апельсина",
+  "Proteins": 1,
+  "Fats": 0,
+  "Carbohydrates": 6,
+  "Kcal": 36
+ },
+ {
+  "Name": "Цедра лимона",
+  "Proteins": 1,
+  "Fats": 0,
+  "Carbohydrates": 4,
+  "Kcal": 28
+ },
+ {
+  "Name": "Цукаты",
+  "Proteins": 3,
+  "Fats": 0,
+  "Carbohydrates": 56,
+  "Kcal": 224
+ },
+ {
+  "Name": "Цукини",
+  "Proteins": 2,
+  "Fats": 0,
+  "Carbohydrates": 3,
+  "Kcal": 18
+ },
+ {
+  "Name": "Черемша",
+  "Proteins": 2,
+  "Fats": 0,
+  "Carbohydrates": 7,
+  "Kcal": 37
+ },
+ {
+  "Name": "Черешня",
+  "Proteins": 1,
+  "Fats": 0,
+  "Carbohydrates": 12,
+  "Kcal": 51
+ },
+ {
+  "Name": "Черника",
+  "Proteins": 1,
+  "Fats": 0,
+  "Carbohydrates": 9,
+  "Kcal": 39
+ },
+ {
+  "Name": "Чернослив (сухофрукты)",
+  "Proteins": 3,
+  "Fats": 0,
+  "Carbohydrates": 62,
+  "Kcal": 256
+ },
+ {
+  "Name": "Чеснок",
+  "Proteins": 6,
+  "Fats": 0,
+  "Carbohydrates": 23,
+  "Kcal": 115
+ },
+ {
+  "Name": "Чечевица зелёная",
+  "Proteins": 24,
+  "Fats": 2,
+  "Carbohydrates": 44,
+  "Kcal": 286
+ },
+ {
+  "Name": "Чечевица красная",
+  "Proteins": 22,
+  "Fats": 1,
+  "Carbohydrates": 49,
+  "Kcal": 312
+ },
+ {
+  "Name": "Шампиньоны",
+  "Proteins": 4,
+  "Fats": 1,
+  "Carbohydrates": 1,
+  "Kcal": 26
+ },
+ {
+  "Name": "Шампиньоны замороженные",
+  "Proteins": 3,
+  "Fats": 0,
+  "Carbohydrates": 1,
+  "Kcal": 27
+ },
+ {
+  "Name": "Шампиньоны резанные консервированные",
+  "Proteins": 2,
+  "Fats": 1,
+  "Carbohydrates": 1,
+  "Kcal": 16
+ },
+ {
+  "Name": "Шелковица",
+  "Proteins": 1,
+  "Fats": 0,
+  "Carbohydrates": 13,
+  "Kcal": 52
+ },
+ {
+  "Name": "Шиповник сушёный",
+  "Proteins": 4,
+  "Fats": 0,
+  "Carbohydrates": 60,
+  "Kcal": 253
+ },
+ {
+  "Name": "Шоколад горький 75%",
+  "Proteins": 9,
+  "Fats": 41,
+  "Carbohydrates": 39,
+  "Kcal": 550
+ },
+ {
+  "Name": "Шоколад горький 80%",
+  "Proteins": 12,
+  "Fats": 39,
+  "Carbohydrates": 34,
+  "Kcal": 527
+ },
+ {
+  "Name": "Шоколад молочный",
+  "Proteins": 7,
+  "Fats": 34,
+  "Carbohydrates": 52,
+  "Kcal": 539
+ },
+ {
+  "Name": "Шпинат",
+  "Proteins": 3,
+  "Fats": 0,
+  "Carbohydrates": 2,
+  "Kcal": 22
+ },
+ {
+  "Name": "Щавель",
+  "Proteins": 2,
+  "Fats": 0,
+  "Carbohydrates": 5,
+  "Kcal": 25
+ },
+ {
+  "Name": "Яблоки",
+  "Proteins": 1,
+  "Fats": 1,
+  "Carbohydrates": 13,
+  "Kcal": 60
+ },
+ {
+  "Name": "Яблоки сушёные (сухофрукты)",
+  "Proteins": 3,
+  "Fats": 0,
+  "Carbohydrates": 66,
+  "Kcal": 269
+ },
+ {
+  "Name": "Яйца",
+  "Proteins": 15,
+  "Fats": 13,
+  "Carbohydrates": 1,
+  "Kcal": 162
+ }
+]

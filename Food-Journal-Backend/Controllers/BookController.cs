@@ -9,7 +9,7 @@ namespace Food_Journal.Controllers
 {
     [Route("api/")]
     [ApiController]
-    public class BookController : Controller
+    public class BookController : ControllerBase
     {
         private readonly BookService _bookService;
 
