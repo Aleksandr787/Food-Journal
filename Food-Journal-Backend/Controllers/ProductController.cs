@@ -20,10 +20,48 @@ namespace Food_Journal.Controllers
         }
 
         [HttpGet("products")]
+        [Authorize]
         public ActionResult<List<Product>> GetProductsTest()
         {
-            var result = _productService.GetBaseProducts();
+            var userId = RequestData.BindAsync(HttpContext).GetAwaiter().GetResult();
+            var result = _productService.GetUserProducts(userId);
             return Ok(result);
+        }
+
+        [HttpGet("products/{id:guid}")]
+        [Authorize]
+        public ActionResult<Product> GetProduct(Guid id)
+        {
+            var userId = RequestData.BindAsync(HttpContext).GetAwaiter().GetResult();
+            var result = _productService.GetProduct(id, userId);
+            return result is null ? NotFound() : Ok(result);
+        }
+
+        [HttpPost("products")]
+        [Authorize]
+        public ActionResult<Product> AddProduct(ProductRequest request)
+        {
+            var userId = RequestData.BindAsync(HttpContext).GetAwaiter().GetResult();
+            var result = _productService.AddProduct(request, userId);
+            return Ok(result);
+        }
+
+        [HttpPut("products/{id:guid}")]
+        [Authorize]
+        public ActionResult<Book?> UpdateProduct(Guid id, ProductRequest request)
+        {
+            var userId = RequestData.BindAsync(HttpContext).GetAwaiter().GetResult();
+            var result = _productService.UpdateProduct(id, request, userId);
+            return result is null ? NotFound() : Ok(result);
+        }
+
+        [HttpDelete("products/{id:guid}")]
+        [Authorize]
+        public ActionResult DeleteProduct(Guid id)
+        {
+            var userId = RequestData.BindAsync(HttpContext).GetAwaiter().GetResult();
+            _productService.DeleteProduct(id, userId);
+            return Ok();
         }
 
         //[HttpGet("books")]
