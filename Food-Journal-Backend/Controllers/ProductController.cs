@@ -48,7 +48,7 @@ namespace Food_Journal.Controllers
 
         [HttpPut("products/{id:guid}")]
         [Authorize]
-        public ActionResult<Book?> UpdateProduct(Guid id, ProductRequest request)
+        public ActionResult<Product?> UpdateProduct(Guid id, ProductRequest request)
         {
             var userId = RequestData.BindAsync(HttpContext).GetAwaiter().GetResult();
             var result = _productService.UpdateProduct(id, request, userId);
