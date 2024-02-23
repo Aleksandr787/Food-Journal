@@ -6,6 +6,7 @@ import { nonAuthGuard } from './guards/non-auth/non-auth.guard';
 import { MainPageComponent } from './components/main-page/main-page/main-page.component';
 import { RegistrationComponent } from './components/registration/registration/registration.component';
 import { BookInfoComponent } from './components/book-info/book-info/book-info.component';
+import { ProductCardComponent } from './components/product-card/product-card/product-card.component';
 
 export const routes: Routes = [
     {
@@ -26,6 +27,11 @@ export const routes: Routes = [
     {
         path: 'books/:id',
         component: BookInfoComponent,
+        canActivate: [authGuard]
+    },
+    {
+        path: 'products',
+        component: ProductCardComponent,
         canActivate: [authGuard]
     },
     {

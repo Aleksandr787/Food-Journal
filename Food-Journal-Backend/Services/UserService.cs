@@ -60,7 +60,7 @@ namespace Food_Journal.Services
                 Subject = identity,
                 Issuer = authSettings.JWTIssuer,
                 Audience = authSettings.JWTAudience,
-                Expires = DateTime.UtcNow.AddMinutes(authSettings.JWTTimeToLive),
+                Expires = DateTime.UtcNow.AddDays(authSettings.JWTDaysToLive),
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(secret),
                     SecurityAlgorithms.HmacSha256Signature)
             };

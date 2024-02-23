@@ -19,9 +19,18 @@ namespace Food_Journal.Controllers
             _productService = productService;
         }
 
-        [HttpGet("products")]
+        [HttpGet("products/base")]
         [Authorize]
-        public ActionResult<List<Product>> GetProductsTest()
+        public ActionResult<List<Product>> GetBaseProducts()
+        {
+            var userId = RequestData.BindAsync(HttpContext).GetAwaiter().GetResult();
+            var result = _productService.GetBaseProducts();
+            return Ok(result);
+        }
+
+        [HttpGet("products/user")]
+        [Authorize]
+        public ActionResult<List<Product>> GetUserProducts()
         {
             var userId = RequestData.BindAsync(HttpContext).GetAwaiter().GetResult();
             var result = _productService.GetUserProducts(userId);
