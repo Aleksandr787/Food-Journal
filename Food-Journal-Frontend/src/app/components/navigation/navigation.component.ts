@@ -39,6 +39,12 @@ import { BookImageService } from '../../services/book-image/book-image.service';
               <span>Продукты</span>
             </div>
           </a>
+          <a mat-list-item routerLink="calendar" routerLinkActive="mdc-list-item--activated">
+            <div class="navigation__category__item">
+              <mat-icon class="navigation__category__item__icon material-symbols-outlined">calendar_month</mat-icon>
+              <span>Календарь</span>
+            </div>
+          </a>
           <a mat-list-item (click)="addBookDialog()">
             <div class="navigation__category__item">
               <mat-icon class="navigation__category__item__icon material-symbols-outlined">post_add</mat-icon>

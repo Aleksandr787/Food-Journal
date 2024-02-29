@@ -11,6 +11,7 @@ import { AuthorPipe } from '../../../pipes/author/author.pipe';
 import { ProductService } from '../../../services/product/product.service';
 import { IProduct } from '../../../interfaces/product';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
+import { DeleteBooksComponent } from '../../dialogs/delete-books/delete-books/delete-books.component';
 
 @Component({
   selector: 'cm-product-card',
@@ -57,7 +58,7 @@ import {MatButtonToggleModule} from '@angular/material/button-toggle';
       
       <div class="container-cards">
         @for (product of productsFilteredList; track product) {
-          <div matRipple class="card" [routerLink]="['/products', product.id]">
+          <div class="card">
             <!-- учесть роутерлинк -->
             <div class="card__info">
               <span class="card__info__name">{{product.name}}</span>
@@ -66,6 +67,9 @@ import {MatButtonToggleModule} from '@angular/material/button-toggle';
               <span class="card__info__author">Углеводы: {{product.carbohydrates}}</span>
               <span class="card__info__author">Ккалории: {{product.kcal}}</span>
               <!-- <span class="card__info__author">{{book | author}}</span> -->
+              <button *ngIf="keyUser()" mat-icon-button (click)="deleteProduct(product.id)">
+                <mat-icon class="header__search__icon">delete</mat-icon>
+              </button>
             </div>
           </div>  
         }
@@ -89,6 +93,11 @@ export class ProductCardComponent  {
     private _dialog: MatDialog
   ) { }
   
+  keyUser(): boolean {
+    if(this.key === '1') return true;
+    return false;
+  }
+
   public onBaseProductsClick(): void {
     this.key = "0";
     this.isActiveBase = true;
@@ -106,7 +115,7 @@ export class ProductCardComponent  {
   public ngOnInit(): void {
     this.loadProducts(this.key);
     
-    this._productService.eventAddBook.subscribe(() => {
+    this._productService.eventAddProduct.subscribe(() => {
       this.loadProducts(this.key);
     })
   }
@@ -144,15 +153,17 @@ export class ProductCardComponent  {
   public addProductDialog(): void {
     this._productService.dialogAddProduct();
   }
-  // public deleteAll(): void {
-  //   const dialogRef = this._dialog.open(DeleteBooksComponent, {data: {all: true}});
+  
+  public deleteProduct(id: string): void {
+    console.log("delete product");
+    const dialogRef = this._dialog.open(DeleteBooksComponent, {data: {all: true}});
     
-  //   dialogRef.afterClosed().subscribe((result: boolean) => {
-  //     if(result) {
-  //       this._productService.deleteAll().subscribe(()=>{
-  //         this.loadBook();
-  //       });
-  //     }
-  //   });
-  // }
+    dialogRef.afterClosed().subscribe((result: boolean) => {
+      if(result) {
+        this._productService.deleteProduct(id).subscribe(()=>{
+          this.loadProducts('1');
+        });
+      }
+    });
+  }
 }

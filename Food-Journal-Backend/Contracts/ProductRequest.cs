@@ -7,12 +7,12 @@ namespace Food_Journal.Contracts
         [Required]
         public string Name { get; init; }
         [Required]
-        public float Proteins { get; init; }
+        public double Proteins { get; init; }
         [Required]
-        public float Fats { get; init; }
+        public double Fats { get; init; }
         [Required]
-        public float Carbohydrates { get; init; }
+        public double Carbohydrates { get; init; }
         [Required]
-        public float Kcal { get; init; }
+        public double Kcal => Math.Round(Proteins*4 + Fats*9 + Carbohydrates*4);
     }
 }

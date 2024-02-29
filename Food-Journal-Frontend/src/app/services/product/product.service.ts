@@ -5,14 +5,15 @@ import { AddBookImageComponent } from '../../components/dialogs/add-book-image/a
 import { MatDialog } from '@angular/material/dialog';
 import { HttpClient } from '@angular/common/http';
 import { environment } from '../../../environments/environment.development';
-import { IProduct } from '../../interfaces/product';
+import { IAddProduct, IProduct } from '../../interfaces/product';
+import { AddProductComponent } from '../../components/dialogs/add-product/add-product.component';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProductService {
 
-  public eventAddBook: EventEmitter<any> = new EventEmitter<any>();
+  public eventAddProduct: EventEmitter<any> = new EventEmitter<any>();
   
   private _defaultImageUrl: string = 'https://i.ebayimg.com/thumbs/images/g/BdQAAOSwvZNhtArq/s-l1600.jpg';
   //rivate _defaultImageUrl: string = 'https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?size=338&ext=jpg&ga=GA1.1.1448711260.1706486400&semt=sph;';
@@ -35,16 +36,19 @@ export class ProductService {
     return this._httpClient.get<IBookImage>(environment.apiUrlDocker + 'books/' + id);
   }
 
-  public addBook(bookAdd: IAddBookImage): Observable<any> {
-    console.log("Add book");
-    return this.isNotValidImageUrl(bookAdd.imageUrl).pipe(
-      tap((result) => {
-        if (result) {
-          bookAdd.imageUrl = this._defaultImageUrl;
-        }
-      }),
-      switchMap(() => this._httpClient.post<any>(environment.apiUrlDocker + 'books', JSON.stringify(bookAdd)))
-    );
+  public addProduct(productAdd: IAddProduct): Observable<any> {
+    console.log("Add product");
+
+    return this._httpClient.post<any>(environment.apiUrlDocker + 'products', JSON.stringify(productAdd));
+
+    // return this.isNotValidImageUrl(productAdd.imageUrl).pipe(
+    //   tap((result) => {
+    //     if (result) {
+    //       productAdd.imageUrl = this._defaultImageUrl;
+    //     }
+    //   }),
+    //   switchMap(() => this._httpClient.post<any>(environment.apiUrlDocker + 'books', JSON.stringify(productAdd)))
+    // );
   }
 
   private isNotValidImageUrl(url: string): Observable<boolean> {
@@ -72,12 +76,12 @@ export class ProductService {
 
   public dialogAddProduct(): void {
     // создь addProductComponent (диaлог)
-    const dialogRef = this._dialog.open(AddBookImageComponent);
+    const dialogRef = this._dialog.open(AddProductComponent);
 
-    dialogRef.afterClosed().subscribe((result: IAddBookImage) => {
+    dialogRef.afterClosed().subscribe((result: IAddProduct) => {
       if (!result) return;
-      this.addBook(result).subscribe(() => {
-        this.eventAddBook.emit();
+      this.addProduct(result).subscribe(() => {
+        this.eventAddProduct.emit();
       });
     });
   }
@@ -95,8 +99,8 @@ export class ProductService {
     );
   }
 
-  public deleteBook(id: string): Observable<any> {
-    return this._httpClient.delete<any>(environment.apiUrlDocker + 'books/' + id);
+  public deleteProduct(id: string): Observable<any> {
+    return this._httpClient.delete<any>(environment.apiUrlDocker + 'products/' + id);
   }
 
   public deleteAll(): Observable<any> {

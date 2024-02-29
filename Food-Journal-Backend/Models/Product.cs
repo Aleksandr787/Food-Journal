@@ -11,13 +11,13 @@ namespace Food_Journal.Models
         [Required]
         public string Name { get; set; }
         [Required]
-        public float Proteins { get; set; }
+        public double Proteins { get; set; }
         [Required]
-        public float Fats { get; set; }
+        public double Fats { get; set; }
         [Required]
-        public float Carbohydrates { get; set; }
+        public double Carbohydrates { get; set; }
         [Required]
-        public float Kcal { get; set; }
+        public double Kcal { get; set; }
 
     }
 }

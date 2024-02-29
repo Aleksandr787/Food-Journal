@@ -7,6 +7,7 @@ import { MainPageComponent } from './components/main-page/main-page/main-page.co
 import { RegistrationComponent } from './components/registration/registration/registration.component';
 import { BookInfoComponent } from './components/book-info/book-info/book-info.component';
 import { ProductCardComponent } from './components/product-card/product-card/product-card.component';
+import { CalendarComponent } from './components/calendar/calendar/calendar.component';
 
 export const routes: Routes = [
     {
@@ -32,6 +33,11 @@ export const routes: Routes = [
     {
         path: 'products',
         component: ProductCardComponent,
+        canActivate: [authGuard]
+    },
+    {
+        path: 'calendar',
+        component: CalendarComponent,
         canActivate: [authGuard]
     },
     {

@@ -129,10 +129,11 @@ $phone-small-media: 400px;
             position: absolute;
             inset: 0;
             background-color: var(--md-sys-color-on-surface);
+            border-radius: 16px;
             opacity: 0.08;
         }
 
-        cursor: pointer;
+        // cursor: pointer;
 
         .card__info__name {
             color: var(--md-sys-color-on-secondary-container);
