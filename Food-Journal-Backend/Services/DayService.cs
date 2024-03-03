@@ -34,7 +34,9 @@ namespace Food_Journal.Services
 
         public ProductItem AddProductItem(DateTime dateId, Guid userId, ProductItemRequest productItemRequest)
         {
-            Day day = GetDay(dateId, userId) ?? AddDay(dateId, userId);
+            //Day day = GetDay(dateId, userId) ?? AddDay(dateId, userId);
+            Day day = GetDay(dateId, userId);
+
 
             ProductItem productItem = new ProductItem(
                 productItemRequest.Weight,

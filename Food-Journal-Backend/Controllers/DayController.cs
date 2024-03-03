@@ -29,7 +29,7 @@ namespace Food_Journal.Controllers
             return Ok(result);
         }
 
-        [HttpPost("days/")]
+        [HttpPost("days/{dateId:datetime}")]
         [Authorize]
         public ActionResult<ProductItem> AddProductItem(DateTime dateId, ProductItemRequest productItemRequest)
         {

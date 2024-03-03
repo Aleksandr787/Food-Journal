@@ -12,7 +12,7 @@ export interface IProductRequest {
     proteins: number,
     fats: number,
     carbohydrates: number,
-    kcal: number   
+    // kcal: number   
 }
 
 export interface IAddProduct {

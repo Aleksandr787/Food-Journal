@@ -13,10 +13,9 @@ export class DayService {
     private _httpClient: HttpClient,
   ) { }
 
-  public addProductItem(dateId: string, productItem: IProductItemRequest): Observable<any> {
+  public addProductItem(id: Date, productItem: IProductItemRequest): Observable<IProductItem> {
     console.log("Add productItem");
-
-    return this._httpClient.post<any>(environment.apiUrlDocker + 'days/' + dateId, JSON.stringify(productItem));
+    return this._httpClient.post<any>(environment.apiUrlDocker + 'days/' + (new Date(id)).toDateString(), JSON.stringify(productItem));
 
     // return this.isNotValidImageUrl(productAdd.imageUrl).pipe(
     //   tap((result) => {
@@ -30,7 +29,7 @@ export class DayService {
 
   public getDay(id: Date): Observable<IDay> {
     console.log("Get Day");
-    return this._httpClient.get<IDay>(environment.apiUrlDocker + 'days/' + id.toDateString());
+    return this._httpClient.get<IDay>(environment.apiUrlDocker + 'days/' + (new Date(id)).toDateString());
   }
 
   public getDayNow(): Observable<IDay> {

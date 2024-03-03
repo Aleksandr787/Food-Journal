@@ -6,7 +6,7 @@ export interface IDay {
     // public List<ProductItem> ProductItems { get; set; }
     id: Date,
     userId: string,
-    productsItems: IProductItem[];
+    productItems: IProductItem[];
 }
 
 export interface IProductItem {
