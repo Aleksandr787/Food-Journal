@@ -22,8 +22,8 @@ namespace Food_Journal.Models
             {
                 return 0;
             }
-
-            return (Weight / 1000) * nutrientPer100g;
+         
+            return Math.Round((Weight / 100 * nutrientPer100g), 2, MidpointRounding.AwayFromZero);
         }
 
         public ProductItem(double weight, ProductRequest product)
