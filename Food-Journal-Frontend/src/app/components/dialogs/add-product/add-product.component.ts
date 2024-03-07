@@ -30,24 +30,24 @@ import { IAddProduct, IProduct } from '../../../interfaces/product';
         Edit Product
     </h1>
     <div mat-dialog-content>
-        <form [formGroup]="productForm" class="bookCardForm">
-            <mat-form-field appearance="outline">
-                <mat-label>Name</mat-label>
-                <input matInput formControlName="name">
-            </mat-form-field>
-            <mat-form-field appearance="outline">
-                <mat-label>Proteins</mat-label>
-                <input matInput formControlName="proteins">
-            </mat-form-field>
-            <mat-form-field appearance="outline">
-                <mat-label>Fats</mat-label>
-                <input matInput formControlName="fats">
-            </mat-form-field>
-            <mat-form-field appearance="outline">
-                <mat-label>Carbohydrates</mat-label>
-                <input matInput formControlName="carbohydrates">
-            </mat-form-field>
-        </form>
+      <form [formGroup]="productForm" class="bookCardForm">
+        <mat-form-field appearance="outline">
+          <mat-label>Name</mat-label>
+          <input matInput formControlName="name">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>Proteins</mat-label>
+          <input matInput formControlName="proteins">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>Fats</mat-label>
+          <input matInput formControlName="fats">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>Carbohydrates</mat-label>
+          <input matInput formControlName="carbohydrates">
+        </mat-form-field>
+      </form>
     </div>
 
     <div mat-dialog-actions class="actions">

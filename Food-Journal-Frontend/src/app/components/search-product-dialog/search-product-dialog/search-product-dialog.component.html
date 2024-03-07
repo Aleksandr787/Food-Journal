@@ -1,4 +1,5 @@
-<div class="container-main">
+<mat-dialog-content>
+  <div class="container-main">
 
     <div class="header">
 
@@ -11,37 +12,38 @@
       </div> -->
 
       <div class="header__search">
-        
+
         <button mat-icon-button disabled="true">
-            <mat-icon class="header__search__icon">search</mat-icon>
+          <mat-icon class="header__search__icon">search</mat-icon>
         </button>
         <input (keyup)="filterResults(filter.value)" type="text" placeholder="Filter by name" #filter>
         <button mat-icon-button>
-            <mat-icon class="header__search__icon">mic</mat-icon>
+          <mat-icon class="header__search__icon">mic</mat-icon>
         </button>
       </div>
       <!-- <button mat-fab color="warn" class="header__button" (click)="deleteAll()" aria-label="Example icon button with a delete icon">
           <mat-icon class="material-symbols-outlined">delete</mat-icon>
       </button> -->
     </div>
-    
+
     <div class="container-cards">
       @for (product of productsFilteredList; track product) {
-        <div class="card">
-          <!-- учесть роутерлинк -->
-          <div class="card__info">
-            <span class="card__info__name">{{product.name}}</span>
-            <span class="card__info__author">Белки: {{product.proteins}}</span>
-            <span class="card__info__author">Жиры: {{product.fats}}</span>
-            <span class="card__info__author">Углеводы: {{product.carbohydrates}}</span>
-            <span class="card__info__author">Ккалории: {{product.kcal}}</span>
-            <!-- <span class="card__info__author">{{book | author}}</span> -->
-            <!-- <button *ngIf="keyUser()" mat-icon-button (click)="deleteProduct(product.id)">
+      <div class="card" (click)="addWeightDialog(product)">
+        <!-- учесть роутерлинк -->
+        <div class="card__info">
+          <span class="card__info__name">{{product.name}}</span>
+          <span class="card__info__author">Белки: {{product.proteins}}</span>
+          <span class="card__info__author">Жиры: {{product.fats}}</span>
+          <span class="card__info__author">Углеводы: {{product.carbohydrates}}</span>
+          <span class="card__info__author">Ккалории: {{product.kcal}}</span>
+          <!-- <span class="card__info__author">{{book | author}}</span> -->
+          <!-- <button *ngIf="keyUser()" mat-icon-button (click)="deleteProduct(product.id)">
               <mat-icon class="header__search__icon">delete</mat-icon>
             </button> -->
-          </div>
-        </div>  
+        </div>
+      </div>
       }
     </div>
-  
+
   </div>
+</mat-dialog-content>

@@ -8,6 +8,7 @@ import { RegistrationComponent } from './components/registration/registration/re
 import { BookInfoComponent } from './components/book-info/book-info/book-info.component';
 import { ProductCardComponent } from './components/product-card/product-card/product-card.component';
 import { CalendarComponent } from './components/calendar/calendar/calendar.component';
+import { SearchProductDialogComponent } from './components/search-product-dialog/search-product-dialog/search-product-dialog.component';
 
 export const routes: Routes = [
     {
@@ -38,6 +39,11 @@ export const routes: Routes = [
     {
         path: 'calendar',
         component: CalendarComponent,
+        canActivate: [authGuard]
+    },
+    {
+        path: 'calendar/search',
+        component: SearchProductDialogComponent,
         canActivate: [authGuard]
     },
     {

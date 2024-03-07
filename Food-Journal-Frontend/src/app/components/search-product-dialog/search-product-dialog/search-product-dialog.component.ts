@@ -7,11 +7,12 @@ import { MatRippleModule } from '@angular/material/core';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
-import { RouterModule } from '@angular/router';
+import { ActivatedRoute, RouterModule } from '@angular/router';
 import { AuthorPipe } from '../../../pipes/author/author.pipe';
 import { IProduct } from '../../../interfaces/product';
 import { ProductService } from '../../../services/product/product.service';
 import { DeleteBooksComponent } from '../../dialogs/delete-books/delete-books/delete-books.component';
+import { DayService } from '../../../services/day/day.service';
 
 @Component({
   selector: 'cm-search-product-dialog',
@@ -38,10 +39,13 @@ export class SearchProductDialogComponent {
   private key: string = '0';
   public isActiveBase: boolean = true;
   public isActiveUser: boolean = false;
+  dayId: Date = new Date();
 
   constructor(
     private _productService: ProductService,
-    private _dialog: MatDialog
+    private _dayService: DayService,
+    private _dialog: MatDialog,
+    private _route: ActivatedRoute
   ) { }
 
   keyUser(): boolean {
@@ -66,11 +70,16 @@ export class SearchProductDialogComponent {
   public ngOnInit(): void {
     this.loadProducts();
 
+    this._route.queryParams.subscribe(params => {
+      this.dayId = params['dayId'];
+    });
+
     // this._productService.eventAddProduct.subscribe(() => {
     //   this.loadProducts();
     // })
   }
 
+  
   public loadProducts(): void {
     this._productService.getAllBase().subscribe(products => {
       this.products = products;
@@ -96,8 +105,9 @@ export class SearchProductDialogComponent {
     );
   }
 
-  public addProductDialog(): void {
-    this._productService.dialogAddProduct();
+  public addWeightDialog(product: IProduct): void {
+    // dayId получить при навигации из calendarComponent c помощью евентЕмитер?
+    this._dayService.dialogAddWeight(this.dayId, product);
   }
 
   // public deleteProduct(id: string): void {

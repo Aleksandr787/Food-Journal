@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, EventEmitter } from '@angular/core';
 import { MatNativeDateModule, MatRippleModule } from '@angular/material/core';
 import { MatDatepickerInputEvent, MatDatepickerModule} from '@angular/material/datepicker';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -10,7 +10,8 @@ import { DayService } from '../../../services/day/day.service';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDialog } from '@angular/material/dialog';
 import { SearchProductDialogComponent } from '../../search-product-dialog/search-product-dialog/search-product-dialog.component';
-
+import { Overlay, OverlayModule } from '@angular/cdk/overlay';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'cm-calendar',
@@ -24,7 +25,7 @@ import { SearchProductDialogComponent } from '../../search-product-dialog/search
     MatRippleModule,
     MatDatepickerModule,
     MatIconModule,
-    MatNativeDateModule
+    MatNativeDateModule,
   ],
   template: `
   <div class="container">
@@ -77,10 +78,13 @@ import { SearchProductDialogComponent } from '../../search-product-dialog/search
 export class CalendarComponent {
 
   public day: IDay | null = null;
+  public eventSentDate: EventEmitter<Date> = new EventEmitter<Date>();
 
   constructor(
+    private _router: Router,
     private _dayService: DayService,
     private _dialog: MatDialog,
+    private _overlay: Overlay,
 
   ) { 
     this.loadDayNow();
@@ -132,32 +136,40 @@ export class CalendarComponent {
 
   public addProductItem(): void {
     if(this.day === null) return;
-
-    let dayId = this.day.id;
+    // добАвить евент емитер который будет передАвАть дАту в search component
+    // зАтем в нём будет выбирАться продукт -> всплывАть WeightProductdialog где будет выбирАться сколько грАмм съеденно
+    // потом по dateId, productItem создАётся productItemRequest, добАвляется в day и зАтем идёт navigate в /calendar и нужно ПередАть dateiD
+    // и вызвАть loadDay по конкретному DayId, что бы получАется я добАвил продукт и вернулся в этот нужжный мне конкретный день
+    this._router.navigate(['/calendar/search'], {queryParams: {dayId: this.day.id}});
+    //this.eventSentDate.emit(this.day.id);
     
-    const dialogRef = this._dialog.open(SearchProductDialogComponent, { data: dayId });
+    // let dayId = this.day.id;
+    // const scrollStrategy = this._overlay.scrollStrategies.reposition();
+    // const dialogRef = this._dialog.open(SearchProductDialogComponent, {
+    //   autoFocus: false,
+    //   scrollStrategy: scrollStrategy});
 
-    dialogRef.afterClosed().subscribe((result: IProductItemRequest) => {
-      if (!result) return; 
-      this._dayService.addProductItem(dayId, result).subscribe(() => {
-        this.loadDay(dayId);
-      });
-    });
+    // dialogRef.afterClosed().subscribe((result: IProductItemRequest) => {
+    //   if (!result) return; 
+    //   this._dayService.addProductItem(dayId, result).subscribe(() => {
+    //     this.loadDay(dayId);
+    //   });
+    // });
 
 
-    this._dayService.addProductItem(this.day.id, {
-      weight: 50,
-      productRequest: {
-        name: "testProduct",
-        proteins: 5,
-        fats: 7,
-        carbohydrates: 9,
-      }
-    }).subscribe((res) => {
-      if(this.day) this.loadDay(this.day.id) 
-    });
+    // this._dayService.addProductItem(this.day.id, {
+    //   weight: 50,
+    //   productRequest: {
+    //     name: "testProduct",
+    //     proteins: 5,
+    //     fats: 7,
+    //     carbohydrates: 9,
+    //   }
+    // }).subscribe((res) => {
+    //   if(this.day) this.loadDay(this.day.id) 
+    // });
 
-    this.loadDayNow();
+    // this.loadDayNow();
   }
 
   // public addProductItem(): void {

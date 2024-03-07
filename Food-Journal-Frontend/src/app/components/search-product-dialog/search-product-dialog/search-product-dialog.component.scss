@@ -11,6 +11,10 @@ $phone-small-media: 400px;
     background-color: #e0e0e0; /* измените цвет фона на свой выбор */
 }
 
+.example::-webkit-scrollbar {
+    display: none;
+}
+
 .container-main {
     position: relative;
     margin-top: 138px;

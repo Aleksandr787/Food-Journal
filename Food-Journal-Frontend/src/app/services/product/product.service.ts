@@ -7,6 +7,8 @@ import { HttpClient } from '@angular/common/http';
 import { environment } from '../../../environments/environment.development';
 import { IAddProduct, IProduct } from '../../interfaces/product';
 import { AddProductComponent } from '../../components/dialogs/add-product/add-product.component';
+import { WeightProductDialogComponent } from '../../components/weight-product-dialog/weight-product-dialog/weight-product-dialog.component';
+import { IProductItemRequest } from '../../interfaces/day';
 
 @Injectable({
   providedIn: 'root'
@@ -85,6 +87,9 @@ export class ProductService {
       });
     });
   }
+
+
+
 
   public editBook(editBookModel: IEditBookImage): Observable<any> {
     console.log("Edit book");
