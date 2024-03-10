@@ -12,22 +12,50 @@ namespace Food_Journal.Services
     public class UserService
     {
         private readonly List<User> _users = new();
+        private readonly List<UserParametrs> _usersParametrs = new();
+
 
         public User? GetUser(string email, string password) =>
             _users.SingleOrDefault(x => x.Email == email && x.Password == password);
 
+        public UserParametrs? GetUserParametrs(Guid userId) =>
+            _usersParametrs.SingleOrDefault(x => x.Id == userId);
+
+        public UserParametrs? UpdateUserParametrs(Guid id, UserParametrsRequest request)
+        {
+            var userParametrs = GetUserParametrs(id);
+
+            if (userParametrs is null) return null;
+            userParametrs.Age = request.Age;
+            userParametrs.Height = request.Height;
+            userParametrs.Weight = request.Weight;
+            userParametrs.Gender = request.Gender;
+            userParametrs.Activity = request.Activity;
+            return userParametrs;
+        }
 
         public User AddUser(UserRequest request)
         {
-            var book = new User
+            var user = new User
             {
                 Id = Guid.NewGuid(),
                 Name = request.Name,
                 Email = request.Email,
                 Password = request.Password
             };
-            _users.Add(book);
-            return book;
+
+            _users.Add(user);
+            _usersParametrs.Add(new UserParametrs
+            {
+                Id = user.Id,
+                Age = -1,
+                Activity = -1,
+                Gender = -1,
+                Height = -1,
+                Weight = -1
+            });
+
+            return user;
         }
 
         public static IResult Login(UserService userService, IOptions<AuthSettings> authSettings, LoginRequest request, CancellationToken cancellationToken)

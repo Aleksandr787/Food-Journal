@@ -7,12 +7,14 @@ import { MatRippleModule } from '@angular/material/core';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
-import { ActivatedRoute, RouterModule } from '@angular/router';
+import { ActivatedRoute, Router, RouterModule } from '@angular/router';
 import { AuthorPipe } from '../../../pipes/author/author.pipe';
 import { IProduct } from '../../../interfaces/product';
 import { ProductService } from '../../../services/product/product.service';
 import { DeleteBooksComponent } from '../../dialogs/delete-books/delete-books/delete-books.component';
 import { DayService } from '../../../services/day/day.service';
+import { WeightProductDialogComponent } from '../../weight-product-dialog/weight-product-dialog/weight-product-dialog.component';
+import { IProductItemRequest } from '../../../interfaces/day';
 
 @Component({
   selector: 'cm-search-product-dialog',
@@ -45,7 +47,8 @@ export class SearchProductDialogComponent {
     private _productService: ProductService,
     private _dayService: DayService,
     private _dialog: MatDialog,
-    private _route: ActivatedRoute
+    private _route: ActivatedRoute,
+    private _router: Router
   ) { }
 
   keyUser(): boolean {
@@ -79,7 +82,7 @@ export class SearchProductDialogComponent {
     // })
   }
 
-  
+
   public loadProducts(): void {
     this._productService.getAllBase().subscribe(products => {
       this.products = products;
@@ -105,10 +108,30 @@ export class SearchProductDialogComponent {
     );
   }
 
+  public onBack(): void {
+    this._router.navigate(['/calendar'], {queryParams: {dayId: this.dayId}});
+  }
+
   public addWeightDialog(product: IProduct): void {
-    // dayId получить при навигации из calendarComponent c помощью евентЕмитер?
     this._dayService.dialogAddWeight(this.dayId, product);
   }
+
+  // //РАБОЧИЙ МЕТОД!!!
+  // public addWeightDialog(product: IProduct): void {
+  //   const dialogRef = this._dialog.open(WeightProductDialogComponent, { data: { product: product } });
+
+  //   dialogRef.afterClosed().subscribe((result: IProductItemRequest) => {
+  //     if (result) {
+  //       this._dayService.addProductItem(this.dayId, result).subscribe(() => {
+  //         // КАКИМТО ОБРАЗОМ ПРИ ОБРАТНОЙ НАВИГАЦИИ В КАЛЕНДАРЬ ПЕРЕДАВАТЬ DayID ЧТОБЫ ЗАГРУЗИТЬ ИМЕННО ЭТУ СТРАНИЦУ КАЛЕНДАРЯ!
+  //         this._router.navigate(['/calendar'])
+  //       });
+  //       // this._dayService.addProductItem(this.dayId, result).subscribe(() => {
+  //       //   this._router.navigate(['/calendar'])
+  //       // });
+  //     }
+  //   });
+  // }
 
   // public deleteProduct(id: string): void {
   //   console.log("delete product");

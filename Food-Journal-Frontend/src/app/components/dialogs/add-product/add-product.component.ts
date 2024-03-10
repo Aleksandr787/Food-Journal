@@ -24,7 +24,7 @@ import { IAddProduct, IProduct } from '../../../interfaces/product';
   ],
   template:  `
     <h1 *ngIf="!isData()" mat-dialog-title class="headline">
-        Add Product
+        Добавить продукт
     </h1>
     <h1 *ngIf="isData()" mat-dialog-title class="headline">
         Edit Product
@@ -32,26 +32,26 @@ import { IAddProduct, IProduct } from '../../../interfaces/product';
     <div mat-dialog-content>
       <form [formGroup]="productForm" class="bookCardForm">
         <mat-form-field appearance="outline">
-          <mat-label>Name</mat-label>
+          <mat-label>Название</mat-label>
           <input matInput formControlName="name">
         </mat-form-field>
         <mat-form-field appearance="outline">
-          <mat-label>Proteins</mat-label>
+          <mat-label>Белки</mat-label>
           <input matInput formControlName="proteins">
         </mat-form-field>
         <mat-form-field appearance="outline">
-          <mat-label>Fats</mat-label>
+          <mat-label>Жиры</mat-label>
           <input matInput formControlName="fats">
         </mat-form-field>
         <mat-form-field appearance="outline">
-          <mat-label>Carbohydrates</mat-label>
+          <mat-label>Углеводы</mat-label>
           <input matInput formControlName="carbohydrates">
         </mat-form-field>
       </form>
     </div>
 
     <div mat-dialog-actions class="actions">
-        <button mat-flat-button (click)="onOk()" [disabled]="productForm.invalid">Save</button>
+        <button mat-flat-button (click)="onOk()" [disabled]="productForm.invalid">Сохранить</button>
     </div>
   `,
   styleUrl: './add-product.component.scss'

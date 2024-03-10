@@ -30,19 +30,19 @@ import { IProduct } from '../../../interfaces/product';
   ],
   template: `
     <h1 mat-dialog-title class="headline">
-      Add Product
+      Добавить продукт
     </h1>
     <div mat-dialog-content>
       <form [formGroup]="productForm" class="bookCardForm">
         <mat-form-field appearance="outline">
-          <mat-label>Proteins</mat-label>
+          <mat-label>Вес (граммы)</mat-label>
           <input matInput formControlName="proteins">
         </mat-form-field>
       </form>
     </div>
 
     <div mat-dialog-actions class="actions">
-      <button mat-flat-button (click)="onOk()" [disabled]="productForm.invalid">Save</button>
+      <button mat-flat-button (click)="onOk()" [disabled]="productForm.invalid">Добавить</button>
     </div>
   `,
   styleUrl: './weight-product-dialog.component.scss'
@@ -75,6 +75,6 @@ export class WeightProductDialogComponent {
 
     }
 
-    this.dialogRef.close({data: {productItemRequest}});
+    this.dialogRef.close(productItemRequest);
   }
 }

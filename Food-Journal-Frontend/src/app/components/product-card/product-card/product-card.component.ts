@@ -46,7 +46,7 @@ import { DeleteBooksComponent } from '../../dialogs/delete-books/delete-books/de
           <button mat-icon-button disabled="true">
               <mat-icon class="header__search__icon">search</mat-icon>
           </button>
-          <input (keyup)="filterResults(filter.value)" type="text" placeholder="Filter by name" #filter>
+          <input (keyup)="filterResults(filter.value)" type="text" placeholder="Поиск по имени" #filter>
           <button mat-icon-button>
               <mat-icon class="header__search__icon">mic</mat-icon>
           </button>

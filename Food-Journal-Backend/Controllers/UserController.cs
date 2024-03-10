@@ -1,4 +1,5 @@
 ﻿using Food_Journal.Contracts;
+using Food_Journal.Controllers.Data;
 using Food_Journal.Models;
 using Food_Journal.Services;
 using Food_Journal.Settings;
@@ -29,7 +30,6 @@ namespace Food_Journal.Controllers
 
         [HttpPost("login")]
         [AllowAnonymous]
-        [SwaggerOperation("Login to system AAAAAAA")]
         public ActionResult<LoginResponse> Login([FromBody] LoginRequest request, CancellationToken cancellationToken)
         {
             var user = _userService.GetUser(request.Email, request.Password);
@@ -37,6 +37,24 @@ namespace Food_Journal.Controllers
                 return BadRequest();
             var result = Authorize(user, _authSettings.Value);
             return Ok(result);
+        }
+
+        [HttpGet("userParametrs")]
+        [Authorize]
+        public ActionResult<UserParametrs> UserParametrs()
+        {
+            var userId = RequestData.BindAsync(HttpContext).GetAwaiter().GetResult();
+            var res = _userService.GetUserParametrs(userId);
+            return Ok(res);
+        }
+
+        [HttpPut("userParametrs")]
+        [Authorize]
+        public ActionResult<UserParametrs> UpdateProduct(UserParametrsRequest request)
+        {
+            var userId = RequestData.BindAsync(HttpContext).GetAwaiter().GetResult();
+            var result = _userService.UpdateUserParametrs(userId, request);
+            return result is null ? NotFound() : Ok(result);
         }
 
         [HttpPost("register")]

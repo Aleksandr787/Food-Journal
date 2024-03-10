@@ -18,17 +18,17 @@ import { MatInputModule } from '@angular/material/input';
   ],
   template: `
     <h1 *ngIf="data.all" mat-dialog-title class="headline">
-      Delete all books?
+      Удалить продукт?
     </h1>
     <h1 *ngIf="!data.all" mat-dialog-title class="headline">
-      Delete book?
+      Удалить продукт??
     </h1>
 
     <div mat-dialog-content></div>
     
     <div mat-dialog-actions class="actions">
-      <button mat-flat-button (click)="onClose()" >No</button>
-      <button mat-flat-button (click)="onDelete()" >Yes</button>
+      <button mat-flat-button (click)="onClose()" >Нет</button>
+      <button mat-flat-button (click)="onDelete()" >Да</button>
     </div>
   `,
   styleUrl: './delete-books.component.scss'

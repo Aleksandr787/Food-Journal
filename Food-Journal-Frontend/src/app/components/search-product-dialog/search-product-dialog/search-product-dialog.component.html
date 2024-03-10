@@ -10,13 +10,17 @@
           <mat-button-toggle (click)="addProductDialog()"> Добавить продукт </mat-button-toggle>
         </mat-button-toggle-group>
       </div> -->
-
       <div class="header__search">
+        <div class="close">
+          <button mat-icon-button (click)="onBack()">
+            <mat-icon>arrow_back</mat-icon>
+          </button>
+        </div>
 
         <button mat-icon-button disabled="true">
           <mat-icon class="header__search__icon">search</mat-icon>
         </button>
-        <input (keyup)="filterResults(filter.value)" type="text" placeholder="Filter by name" #filter>
+        <input (keyup)="filterResults(filter.value)" type="text" placeholder="Поиск по имени" #filter>
         <button mat-icon-button>
           <mat-icon class="header__search__icon">mic</mat-icon>
         </button>

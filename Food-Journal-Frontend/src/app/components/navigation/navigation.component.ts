@@ -27,12 +27,12 @@ import { BookImageService } from '../../services/book-image/book-image.service';
               <span>Home</span>
             </div>
           </a>
-          <a mat-list-item routerLink="books" routerLinkActive="mdc-list-item--activated">
+          <!-- <a mat-list-item routerLink="books" routerLinkActive="mdc-list-item--activated">
             <div class="navigation__category__item">
               <mat-icon class="navigation__category__item__icon material-symbols-outlined">book_2</mat-icon>
               <span>My books</span>
             </div>
-          </a>
+          </a> -->
           <a mat-list-item routerLink="products" routerLinkActive="mdc-list-item--activated">
             <div class="navigation__category__item">
               <mat-icon class="navigation__category__item__icon material-symbols-outlined">grocery</mat-icon>
@@ -45,12 +45,12 @@ import { BookImageService } from '../../services/book-image/book-image.service';
               <span>Календарь</span>
             </div>
           </a>
-          <a mat-list-item (click)="addBookDialog()">
+          <!-- <a mat-list-item (click)="addBookDialog()">
             <div class="navigation__category__item">
               <mat-icon class="navigation__category__item__icon material-symbols-outlined">post_add</mat-icon>
               <span>Add book</span>
             </div>
-          </a>
+          </a> -->
           <a mat-list-item (click)="logout();">
             <div class="navigation__category__item">
               <mat-icon class="navigation__category__item__icon material-symbols-outlined">logout</mat-icon>
