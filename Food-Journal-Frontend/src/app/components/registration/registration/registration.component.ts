@@ -21,32 +21,32 @@ import { Router } from '@angular/router';
   template: `
     <div class="wrapper">
       <div class="register">
-        <span class="register__title">Create Your Account</span>
+        <span class="register__title">Создать аккаунт</span>
         <div class="login">
-        <span class="">Already have an account?</span>
-        <a class="login__button" (click)="logout()">Login</a>
+        <span class="">Уже есть аккаунт?</span>
+        <a class="login__button" (click)="logout()">Войти</a>
         </div>
         <form [formGroup]="bookForm" class="register__form">
           <mat-form-field appearance="outline">
-            <mat-label>Name</mat-label>
+            <mat-label>Имя</mat-label>
             <input matInput formControlName="name">
-            <mat-error *ngIf="name.hasError('required')">Name is required</mat-error>    
+            <mat-error *ngIf="name.hasError('required')">Name обязательное поле</mat-error>    
           </mat-form-field>
           <mat-form-field appearance="outline">
             <mat-label>Email</mat-label>
             <input matInput formControlName="email">
-            <mat-error *ngIf="email.hasError('required')">Email is required</mat-error>    
-            <mat-error *ngIf="email.hasError('email')">Email is invalid</mat-error>    
+            <mat-error *ngIf="email.hasError('required')">Email обязательное поле</mat-error>    
+            <mat-error *ngIf="email.hasError('email')">Email не валидный</mat-error>    
           </mat-form-field>
           <mat-form-field appearance="outline">
-            <mat-label>Password</mat-label>
-            <mat-error *ngIf="password.hasError('required')">Password is required</mat-error>
+            <mat-label>Пароль</mat-label>
+            <mat-error *ngIf="password.hasError('required')">Пароль обязательное поле</mat-error>
             <input type="password" matInput formControlName="password">    
           </mat-form-field>
         </form>
 
         <div class="register__buttons">
-          <button mat-flat-button [disabled]="bookForm.invalid" (click)="register()">Create account</button>
+          <button mat-flat-button [disabled]="bookForm.invalid" (click)="register()">Создать аккаунт</button>
         </div>
       </div>
     </div>

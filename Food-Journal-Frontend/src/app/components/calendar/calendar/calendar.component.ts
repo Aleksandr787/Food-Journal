@@ -10,9 +10,11 @@ import { DayService } from '../../../services/day/day.service';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDialog } from '@angular/material/dialog';
 import { SearchProductDialogComponent } from '../../search-product-dialog/search-product-dialog/search-product-dialog.component';
-import { Overlay, OverlayModule } from '@angular/cdk/overlay';
+import { Overlay } from '@angular/cdk/overlay';
 import { ActivatedRoute, Router } from '@angular/router';
 import { DeleteBooksComponent } from '../../dialogs/delete-books/delete-books/delete-books.component';
+import Chart from 'chart.js/auto';
+
 
 @Component({
   selector: 'cm-calendar',
@@ -45,6 +47,9 @@ import { DeleteBooksComponent } from '../../dialogs/delete-books/delete-books/de
       <mat-icon class="material-symbols-outlined">add</mat-icon>
     </button>
     <p>Выбранный день: {{day?.id}}</p>
+    <div class="chart-container">
+      <canvas id="MyChart" >{{ chart }}</canvas>
+    </div>
     <div *ngIf="macrosResult">
       <p>Сумма белков: {{ macrosResult.totalProteins }}</p>
       <p>Сумма жиров: {{ macrosResult.totalFats }}</p>
@@ -85,6 +90,7 @@ export class CalendarComponent implements OnInit{
 
   public day: IDay | null = null;
   public macrosResult: any;  
+  public chart: any;
 
   public eventSentDate: EventEmitter<Date> = new EventEmitter<Date>();
 
@@ -107,6 +113,7 @@ export class CalendarComponent implements OnInit{
         this.loadDay(params['dayId']);
       }
     });
+    //this.createChart();
 
     // this._dayService.eventCurrentDay.subscribe((dayId : Date) => {
     //   console.log("ЗАШЛО В ЕВЕНТДЭЙ")
@@ -114,6 +121,32 @@ export class CalendarComponent implements OnInit{
     // })
   }
   
+  public createChart(data: any){
+  
+    this.chart = new Chart("MyChart", {
+      type: 'bar',
+      data: {// values on X-Axis
+        labels: ['Белки', 'Жиры', 'Углеводы'], 
+	       datasets: [
+          {
+            label: "Съедено",
+            data: [data.totalProteins, data.totalFats, data.totalCarbohydrates],
+            backgroundColor: 'blue'
+          },
+          {
+            label: "Норма",
+            data: ['140', '140', '350'],
+            backgroundColor: 'limegreen'
+          }  
+        ]
+      },
+      options: {
+        aspectRatio:2.5
+      }
+      
+    });
+  }
+
   calculateTotalMacros(day: IDay) {
     let totalProteins = 0;
     let totalFats = 0;
@@ -147,6 +180,7 @@ export class CalendarComponent implements OnInit{
       console.log(res.userId);
       this.day = res;
       this.macrosResult = this.calculateTotalMacros(this.day);
+      this.createChart(this.macrosResult);
     });
   }
 
@@ -155,6 +189,7 @@ export class CalendarComponent implements OnInit{
       console.log('load CURRENT day')
       this.day = res;
       this.macrosResult = this.calculateTotalMacros(this.day);
+      this.createChart(this.macrosResult);
     });
   }
 
@@ -166,6 +201,7 @@ export class CalendarComponent implements OnInit{
       console.log(res.userId);
       this.day = res;
       this.macrosResult = this.calculateTotalMacros(this.day);
+      this.createChart(this.macrosResult);
     });
   }
 

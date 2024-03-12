@@ -28,11 +28,15 @@ import { IUserParametrs } from '../../../interfaces/user';
         <h1>Вес(кг): {{userParametrs.weight}}</h1>
         <h1>Пол: {{userParametrs.gender}}</h1>
         <h1>Физическая активность: {{userParametrs.activity}}</h1>
+        <button mat-flat-button (click)="onUpdateUserParametrsDialog()">Обновить данные</button>
         <!-- <h1>This is a book library,</h1>
         <h1>Generate your books right now!</h1> -->
       
       </div>
 
+      <!-- <div class="button-wrapper-icons">
+          <button mat-flat-button (click)="onUpdateUserParametrsDialog()">Обновить данные</button>
+      </div> -->
       
       <div class="slider-wrapper">
         <mat-slider class="slider" min="0" max="30" step="1" discrete [displayWith]="formatLabel" >
@@ -58,22 +62,33 @@ export class MainPageComponent implements OnInit {
     public authService: AuthService,
     private _bookImageService: BookImageService,
     private _router: Router,
-    ) {
+  ) {
   }
 
   ngOnInit(): void {
-    this.authService.getUserParametrs().subscribe((res) => {
-      this.userParametrs = res;
-      console.log(res.age);
-      console.log(res.height);
+    this.loadUserParametrs();
 
-    });
+    this.authService.eventUpdateUserParametrs.subscribe(() => {
+      this.loadUserParametrs();
+    })
   }
 
+  public loadUserParametrs(): void {
+    this.authService.getUserParametrs().subscribe((res) => {
+      this.userParametrs = res;
+    });
+  }
 
   public formatLabel(value: number): string {
     this.sliderValue = `${value}`;
     return `${value}`;
+  }
+
+  public onUpdateUserParametrsDialog(): void {
+    if(!this.userParametrs) return;
+    this.authService.dialogUpdateUserParametrs(this.userParametrs);
+    // userId возьмётся на беке, юзерПараметры из диалога создам
+
   }
 
   public generateBooks(count: string): void {

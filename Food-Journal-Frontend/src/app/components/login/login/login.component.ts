@@ -23,27 +23,27 @@ import { MatSliderModule } from '@angular/material/slider';
   template: `
     <div class="wrapper">
       <div class="register">
-        <span class="register__title">Welcome Back</span>
+        <span class="register__title">Добро пожаловать</span>
         <div class="login">
-        <span class="">Don't have an account?</span>
-        <a class="login__button" (click)="toRegister()">Sign up</a>
+        <span class="">Нету аккаунта?</span>
+        <a class="login__button" (click)="toRegister()">Создать</a>
         </div>
         <form [formGroup]="bookForm" class="register__form">
           <mat-form-field appearance="outline">
             <mat-label>Email</mat-label>
             <input matInput formControlName="email">
-            <mat-error *ngIf="email.hasError('required')">Email is required</mat-error>    
-            <mat-error *ngIf="email.hasError('email')">Email is invalid</mat-error>    
+            <mat-error *ngIf="email.hasError('required')">Email обязательное поле</mat-error>    
+            <mat-error *ngIf="email.hasError('email')">Email не валидный</mat-error>    
           </mat-form-field>
           <mat-form-field appearance="outline">
-            <mat-label>Password</mat-label>
-            <mat-error *ngIf="password.hasError('required')">Password is required</mat-error>
+            <mat-label>Пароль</mat-label>
+            <mat-error *ngIf="password.hasError('required')">Пароль обязательное поле</mat-error>
             <input type="password" matInput formControlName="password">    
           </mat-form-field>
         </form>
 
         <div class="register__buttons">
-          <button mat-flat-button [disabled]="bookForm.invalid" (click)="login()">Sign In</button>
+          <button mat-flat-button [disabled]="bookForm.invalid" (click)="login()">Войти</button>
         </div>
       </div>
     </div>
