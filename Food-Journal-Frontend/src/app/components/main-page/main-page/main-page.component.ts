@@ -7,27 +7,25 @@ import { MatSliderModule } from '@angular/material/slider';
 import { BookImageService } from '../../../services/book-image/book-image.service';
 import { MatIconModule } from '@angular/material/icon';
 import { IUserParametrs } from '../../../interfaces/user';
+import { GoalPipePipe } from "../../../pipes/goal-pipe.pipe";
+import { ActivityPipe } from "../../../pipes/activity.pipe";
+import { GenderPipe } from "../../../pipes/gender.pipe";
 
 @Component({
-  selector: 'cm-main-page',
-  standalone: true,
-  imports: [
-    CommonModule,
-    RouterOutlet,
-    RouterModule,
-    MatButtonModule,
-    MatIconModule,
-    MatSliderModule
-  ],
-  template: `
+    selector: 'cm-main-page',
+    standalone: true,
+    template: `
     <div *ngIf="authService.isAutorized" class="main-container">
       <div *ngIf="userParametrs" class="title">
-        <h1>Привет, {{authService.userName}}!</h1>
-        <h1>Возраст: {{userParametrs.age}}</h1>
-        <h1>Рост(см): {{userParametrs.height}}</h1>
-        <h1>Вес(кг): {{userParametrs.weight}}</h1>
-        <h1>Пол: {{userParametrs.gender}}</h1>
-        <h1>Физическая активность: {{userParametrs.activity}}</h1>
+        <h2>Привет, {{authService.userName}}!</h2>
+        <h2>Возраст: {{userParametrs.age}}</h2>
+        <h2>Рост(см): {{userParametrs.height}}</h2>
+        <h2>Вес(кг): {{userParametrs.weight}}</h2>
+        <h2>Пол: {{userParametrs.gender | gender}}</h2>
+        <h2>Физическая активность: {{userParametrs.activity | activity}}</h2>
+        <h2>Цель: {{userParametrs.goal | goalPipe}}</h2>
+        <h2>Cуточная норма каллорий (ккал): {{authService.calculateCalorieIntake(userParametrs)}}</h2>
+
         <button mat-flat-button (click)="onUpdateUserParametrsDialog()">Обновить данные</button>
         <!-- <h1>This is a book library,</h1>
         <h1>Generate your books right now!</h1> -->
@@ -38,11 +36,11 @@ import { IUserParametrs } from '../../../interfaces/user';
           <button mat-flat-button (click)="onUpdateUserParametrsDialog()">Обновить данные</button>
       </div> -->
       
-      <div class="slider-wrapper">
+      <!-- <div class="slider-wrapper">
         <mat-slider class="slider" min="0" max="30" step="1" discrete [displayWith]="formatLabel" >
           <input matSliderThumb #slider>
         </mat-slider>
-      </div>
+      </div> -->
 
       <!-- <div class="button-wrapper-icons">
         <mat-icon class="material-symbols-outlined">arrow_forward</mat-icon>
@@ -51,7 +49,18 @@ import { IUserParametrs } from '../../../interfaces/user';
       </div> -->
     </div>
   `,
-  styleUrl: './main-page.component.scss'
+    styleUrl: './main-page.component.scss',
+    imports: [
+        CommonModule,
+        RouterOutlet,
+        RouterModule,
+        MatButtonModule,
+        MatIconModule,
+        MatSliderModule,
+        GoalPipePipe,
+        ActivityPipe,
+        GenderPipe
+    ]
 })
 export class MainPageComponent implements OnInit {
 

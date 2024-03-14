@@ -27,6 +27,12 @@ import { BookImageService } from '../../services/book-image/book-image.service';
               <span>Home</span>
             </div>
           </a>
+          <a mat-list-item routerLink="main" routerLink="main" routerLinkActive="mdc-list-item--activated">
+            <div class="navigation__category__item">
+              <mat-icon class="navigation__category__item__icon material-symbols-outlined">person</mat-icon>
+              <span>Профиль</span>
+            </div>
+          </a>
           <!-- <a mat-list-item routerLink="books" routerLinkActive="mdc-list-item--activated">
             <div class="navigation__category__item">
               <mat-icon class="navigation__category__item__icon material-symbols-outlined">book_2</mat-icon>
@@ -54,7 +60,7 @@ import { BookImageService } from '../../services/book-image/book-image.service';
           <a mat-list-item (click)="logout();">
             <div class="navigation__category__item">
               <mat-icon class="navigation__category__item__icon material-symbols-outlined">logout</mat-icon>
-              <span>Logout</span>
+              <span>Выйти</span>
             </div>
           </a>
         </mat-nav-list>

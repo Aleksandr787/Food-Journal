@@ -31,6 +31,7 @@ namespace Food_Journal.Services
             userParametrs.Weight = request.Weight;
             userParametrs.Gender = request.Gender;
             userParametrs.Activity = request.Activity;
+            userParametrs.Goal = request.Goal;
             return userParametrs;
         }
 
@@ -52,7 +53,8 @@ namespace Food_Journal.Services
                 Activity = -1,
                 Gender = -1,
                 Height = -1,
-                Weight = -1
+                Weight = -1,
+                Goal = -1,
             });
 
             return user;

@@ -15,6 +15,11 @@ $phone-small-media: 350px;
     gap: 12px;
 }
 
+.sliderForm {
+    display: flex;
+    flex-direction: column;
+}
+
 .title {
     display: flex;
     justify-content: center;

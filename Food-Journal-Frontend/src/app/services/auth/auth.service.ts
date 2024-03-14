@@ -110,4 +110,50 @@ export class AuthService {
       });
     });
   }
+
+  public calculateCalorieIntake(userParams: IUserParametrs): number {
+    let BMR: number;
+    
+    if (userParams.gender === 1) {
+      BMR = 88.362 + (13.397 * userParams.weight) + (4.799 * userParams.height) - (5.677 * userParams.age);
+    } else {
+      BMR = 447.593 + (9.247 * userParams.weight) + (3.098 * userParams.height) - (4.330 * userParams.age);
+    }
+    
+    let activityMultiplier: number;
+    switch (userParams.activity) {
+      case 1:
+        activityMultiplier = 1.2;
+        break;
+      case 2:
+        activityMultiplier = 1.375;
+        break;
+      case 3:
+        activityMultiplier = 1.55;
+        break;
+      case 4:
+        activityMultiplier = 1.725;
+        break;
+      default:
+        activityMultiplier = 1.2; // по умолчанию считаем сидячий образ жизни
+    }
+    
+    let calorieIntake = BMR * activityMultiplier;
+    
+    switch (userParams.goal) {
+      case 1:
+        calorieIntake -= 500;
+        break;
+      case 2:
+        // Поддерживаем текущий уровень калорий
+        break;
+      case 3:
+        calorieIntake += 500;
+        break;
+      default:
+        // Ничего не делаем
+    }
+    
+    return Math.round(calorieIntake);
+  }
 }

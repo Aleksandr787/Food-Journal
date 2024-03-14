@@ -10,23 +10,15 @@ import { MatInputModule } from '@angular/material/input';
 import { IUserParametrs, IUserParametrsRequest } from '../../../../interfaces/user';
 import { MatSliderModule } from '@angular/material/slider';
 import {MatRadioModule} from '@angular/material/radio';
+import { GoalPipePipe } from "../../../../pipes/goal-pipe.pipe";
+import { ActivityPipe } from "../../../../pipes/activity.pipe";
+import { GenderPipe } from "../../../../pipes/gender.pipe";
 
 
 @Component({
-  selector: 'cm-update-user-parametrs',
-  standalone: true,
-  imports: [
-    CommonModule,
-    ReactiveFormsModule,
-    MatFormFieldModule,
-    MatRippleModule,
-    MatInputModule,
-    MatIconModule,
-    MatButtonModule,
-    MatSliderModule,
-    MatRadioModule,
-  ],
-  template: `
+    selector: 'cm-update-user-parametrs',
+    standalone: true,
+    template: `
     <h1 mat-dialog-title class="headline">
        Данные: 
     </h1>
@@ -51,41 +43,23 @@ import {MatRadioModule} from '@angular/material/radio';
           </mat-slider>
         </div>
         <div class="sliderForm">
-          <mat-label>Пол (1 - Мужской / 2 - Женский): {{gender.value}}</mat-label>
+          <mat-label>Пол: {{gender.value | gender}}</mat-label>
           <mat-slider class="slider" min="1" max="2" step="1">
             <input matInput matSliderThumb formControlName="gender" #gender>
           </mat-slider>
         </div>
         <div class="sliderForm">
-          <mat-label>Физическая активность: {{activity.value}}</mat-label>
+          <mat-label>Физическая активность: {{activity.value | activity}}</mat-label>
           <mat-slider class="slider" min="1" max="4" step="1">
             <input matInput matSliderThumb formControlName="activity" #activity>
           </mat-slider>
         </div>
-        <!-- <mat-form-field appearance="outline">
-          <mat-label>Возвраст</mat-label>
-          <input matInput formControlName="age">
-        </mat-form-field> -->
-        <!-- <mat-form-field appearance="outline">
-          <mat-label>Рост</mat-label>
-          <input matInput formControlName="height">
-        </mat-form-field> -->
-        <!-- <mat-form-field appearance="outline">
-          <mat-label>Вес</mat-label>
-          <input matInput formControlName="weight">
-        </mat-form-field> -->
-        <!-- <mat-radio-group>
-          <mat-radio-button formControlName="gender" value="1">Мужской</mat-radio-button>
-          <mat-radio-button formControlName="gender" value="2">Женский</mat-radio-button>
-        </mat-radio-group> -->
-        <!-- <mat-form-field appearance="outline">
-          <mat-label>Пол</mat-label>
-          <input matInput formControlName="gender">
-        </mat-form-field>
-        <mat-form-field appearance="outline">
-          <mat-label>Физическая активность</mat-label>
-          <input matInput formControlName="activity">
-        </mat-form-field> -->
+        <div class="sliderForm">
+          <mat-label>Цель: {{goal.value | goalPipe}}</mat-label>
+          <mat-slider class="slider" min="1" max="3" step="1">
+            <input matInput matSliderThumb formControlName="goal" #goal>
+          </mat-slider>
+        </div>
       </form>
     </div>
 
@@ -93,7 +67,21 @@ import {MatRadioModule} from '@angular/material/radio';
         <button mat-flat-button (click)="onEdit()" [disabled]="productForm.invalid">Сохранить</button>
     </div>
   `,
-  styleUrl: './update-user-parametrs.component.scss'
+    styleUrl: './update-user-parametrs.component.scss',
+    imports: [
+        CommonModule,
+        ReactiveFormsModule,
+        MatFormFieldModule,
+        MatRippleModule,
+        MatInputModule,
+        MatIconModule,
+        MatButtonModule,
+        MatSliderModule,
+        MatRadioModule,
+        GoalPipePipe,
+        ActivityPipe,
+        GenderPipe
+    ]
 })
 export class UpdateUserParametrsComponent {
 
@@ -104,6 +92,7 @@ export class UpdateUserParametrsComponent {
     weight: new FormControl<number>(0, Validators.required),
     gender: new FormControl<number>(0, Validators.required),
     activity: new FormControl<number>(0, Validators.required),
+    goal: new FormControl<number>(0, Validators.required),
   });
 
   constructor(
@@ -118,7 +107,7 @@ export class UpdateUserParametrsComponent {
     this.productForm.get('weight')?.setValue(this.data.weight);
     this.productForm.get('gender')?.setValue(this.data.gender);
     this.productForm.get('activity')?.setValue(this.data.activity);
-    // ДОБАВИТЬ ЦЕЛЬ ПОХУДЕНИЕ ПОДДЕРЖАНИЕ ИЛИ НАБОР МАССЫ
+    this.productForm.get('goal')?.setValue(this.data.goal);
   }
 
   public onEdit(): void {
@@ -129,7 +118,8 @@ export class UpdateUserParametrsComponent {
       height: this.productForm.get("height")?.value ?? 0,
       weight: this.productForm.get("weight")?.value ?? 0,
       gender: this.productForm.get("gender")?.value ?? 0,
-      activity: this.productForm.get("activity")?.value ?? 0
+      activity: this.productForm.get("activity")?.value ?? 0,
+      goal: this.productForm.get("goal")?.value ?? 0
     }
 
     this.dialogRef.close(userParametrs);

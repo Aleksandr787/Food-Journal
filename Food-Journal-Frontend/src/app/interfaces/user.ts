@@ -5,6 +5,7 @@ export interface IUserParametrs {
     weight: number,
     gender: number,
     activity: number,
+    goal: number,
 }
 
 export interface IUserParametrsRequest {
@@ -13,4 +14,5 @@ export interface IUserParametrsRequest {
     weight: number,
     gender: number,
     activity: number,
+    goal: number,
 }

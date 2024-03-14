@@ -12,6 +12,14 @@ $phone-media: 500px;
     background-color: var(red);
 }
 
+.sliderForm {
+    display: flex;
+    flex-direction: column;
+    padding-inline: 24px;
+    min-width: 400px;
+    box-sizing: border-box;
+}
+
 .headline {
     display: flex;
     justify-content: center;
@@ -23,6 +31,7 @@ $phone-media: 500px;
     display: flex;
     justify-content: flex-end;
     gap: 16px;
+    margin-top: 12px;
 
     // &__text-button {
     //     color: var(--md-sys-color-primary);
