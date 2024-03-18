@@ -14,6 +14,8 @@ import { Overlay } from '@angular/cdk/overlay';
 import { ActivatedRoute, Router } from '@angular/router';
 import { DeleteBooksComponent } from '../../dialogs/delete-books/delete-books/delete-books.component';
 import Chart from 'chart.js/auto';
+import { IUserStandart } from '../../../interfaces/user';
+import { AuthService } from '../../../services/auth/auth.service';
 
 
 @Component({
@@ -46,6 +48,7 @@ import Chart from 'chart.js/auto';
     <button mat-fab color="warn" class="header__button" (click)="addProductItem()">
       <mat-icon class="material-symbols-outlined">add</mat-icon>
     </button>
+    
     <p>Выбранный день: {{day?.id}}</p>
     <div class="chart-container">
       <canvas id="MyChart" >{{ chart }}</canvas>
@@ -91,19 +94,30 @@ export class CalendarComponent implements OnInit{
   public day: IDay | null = null;
   public macrosResult: any;  
   public chart: any;
+  public userStandart: IUserStandart = {
+    kkal: 10,
+    proteins: 10,
+    fats: 10,
+    carbohydrates: 10
+  };
 
   public eventSentDate: EventEmitter<Date> = new EventEmitter<Date>();
+  // public eventUserStandart: EventEmitter<IUserStandart> = new EventEmitter<IUserStandart>();
+
 
   constructor(
     private _router: Router,
     private _dayService: DayService,
     private _dialog: MatDialog,
-    private _overlay: Overlay,
     private _route: ActivatedRoute,
-
+    private _authService: AuthService,
   ) {}
 
   ngOnInit(): void {
+    this._authService.eventUserStandart.subscribe((res) => {
+      this.userStandart = res;
+    });
+
     this.loadDayNow();
     // console.log(this.day);
     
@@ -113,6 +127,8 @@ export class CalendarComponent implements OnInit{
         this.loadDay(params['dayId']);
       }
     });
+
+
     //this.createChart();
 
     // this._dayService.eventCurrentDay.subscribe((dayId : Date) => {
@@ -121,9 +137,12 @@ export class CalendarComponent implements OnInit{
     // })
   }
   
-  public createChart(data: any){
-  
-    this.chart = new Chart("MyChart", {
+  public createChart(data: any): Chart{
+    if (this.chart) {
+      this.chart.destroy();
+    }
+    
+    return new Chart("MyChart", {
       type: 'bar',
       data: {// values on X-Axis
         labels: ['Белки', 'Жиры', 'Углеводы'], 
@@ -135,13 +154,13 @@ export class CalendarComponent implements OnInit{
           },
           {
             label: "Норма",
-            data: ['140', '140', '350'],
+            data: [this.userStandart.proteins, this.userStandart.fats, this.userStandart.carbohydrates],
             backgroundColor: 'limegreen'
           }  
         ]
       },
       options: {
-        aspectRatio:2.5
+        aspectRatio: 2
       }
       
     });
@@ -180,7 +199,7 @@ export class CalendarComponent implements OnInit{
       console.log(res.userId);
       this.day = res;
       this.macrosResult = this.calculateTotalMacros(this.day);
-      this.createChart(this.macrosResult);
+      this.chart = this.createChart(this.macrosResult);
     });
   }
 
@@ -189,58 +208,18 @@ export class CalendarComponent implements OnInit{
       console.log('load CURRENT day')
       this.day = res;
       this.macrosResult = this.calculateTotalMacros(this.day);
-      this.createChart(this.macrosResult);
+      this.chart = this.createChart(this.macrosResult);
     });
   }
 
   public getDayEvent(event: MatDatepickerInputEvent<Date>) {
-    // add day from dayservice
     if (event.value === null) return;
-    this._dayService.getDay(event.value).subscribe((res) => {
-      console.log(res.id);
-      console.log(res.userId);
-      this.day = res;
-      this.macrosResult = this.calculateTotalMacros(this.day);
-      this.createChart(this.macrosResult);
-    });
+    this.loadDay(event.value);
   }
 
   public addProductItem(): void {
     if(this.day === null) return;
-    // добАвить евент емитер который будет передАвАть дАту в search component
-    // зАтем в нём будет выбирАться продукт -> всплывАть WeightProductdialog где будет выбирАться сколько грАмм съеденно
-    // потом по dateId, productItem создАётся productItemRequest, добАвляется в day и зАтем идёт navigate в /calendar и нужно ПередАть dateiD
-    // и вызвАть loadDay по конкретному DayId, что бы получАется я добАвил продукт и вернулся в этот нужжный мне конкретный день
     this._router.navigate(['/calendar/search'], {queryParams: {dayId: this.day.id}});
-    //this.eventSentDate.emit(this.day.id);
-    
-    // let dayId = this.day.id;
-    // const scrollStrategy = this._overlay.scrollStrategies.reposition();
-    // const dialogRef = this._dialog.open(SearchProductDialogComponent, {
-    //   autoFocus: false,
-    //   scrollStrategy: scrollStrategy});
-
-    // dialogRef.afterClosed().subscribe((result: IProductItemRequest) => {
-    //   if (!result) return; 
-    //   this._dayService.addProductItem(dayId, result).subscribe(() => {
-    //     this.loadDay(dayId);
-    //   });
-    // });
-
-
-    // this._dayService.addProductItem(this.day.id, {
-    //   weight: 50,
-    //   productRequest: {
-    //     name: "testProduct",
-    //     proteins: 5,
-    //     fats: 7,
-    //     carbohydrates: 9,
-    //   }
-    // }).subscribe((res) => {
-    //   if(this.day) this.loadDay(this.day.id) 
-    // });
-
-    // this.loadDayNow();
   }
 
   
@@ -258,21 +237,5 @@ export class CalendarComponent implements OnInit{
       }
     });
   }
-  // public addProductItem(): void {
-  //   if(this.day === null) return;
-  //   this._dayService.addProductItem(this.day.id, {
-  //     weight: 50,
-  //     productRequest: {
-  //       name: "testProduct",
-  //       proteins: 5,
-  //       fats: 7,
-  //       carbohydrates: 9,
-  //     }
-  //   }).subscribe((res) => {
-  //     if(this.day) this.loadDay(this.day.id) 
-  //   });
-
-  //   this.loadDayNow();
-  // }
 }
 

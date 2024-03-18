@@ -16,3 +16,10 @@ export interface IUserParametrsRequest {
     activity: number,
     goal: number,
 }
+
+export interface IUserStandart {
+    kkal: number,
+    proteins: number,
+    fats: number,
+    carbohydrates: number,
+}

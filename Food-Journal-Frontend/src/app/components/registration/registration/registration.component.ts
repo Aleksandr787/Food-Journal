@@ -30,7 +30,7 @@ import { Router } from '@angular/router';
           <mat-form-field appearance="outline">
             <mat-label>Имя</mat-label>
             <input matInput formControlName="name">
-            <mat-error *ngIf="name.hasError('required')">Name обязательное поле</mat-error>    
+            <mat-error *ngIf="name.hasError('required')">Имя обязательное поле</mat-error>    
           </mat-form-field>
           <mat-form-field appearance="outline">
             <mat-label>Email</mat-label>

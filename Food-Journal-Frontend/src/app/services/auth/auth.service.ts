@@ -5,7 +5,7 @@ import { IRegister } from '../../interfaces/register';
 import { HttpClient } from '@angular/common/http';
 import { Observable, tap } from 'rxjs';
 import { environment } from '../../../environments/environment.development';
-import { IUserParametrs, IUserParametrsRequest } from '../../interfaces/user';
+import { IUserParametrs, IUserParametrsRequest, IUserStandart } from '../../interfaces/user';
 import { MatDialog } from '@angular/material/dialog';
 import { UpdateUserParametrsComponent } from '../../components/dialogs/update-user-parametrs/update-user-parametrs/update-user-parametrs.component';
 
@@ -15,6 +15,7 @@ import { UpdateUserParametrsComponent } from '../../components/dialogs/update-us
 export class AuthService {
 
   public eventUpdateUserParametrs: EventEmitter<any> = new EventEmitter<any>();
+  public eventUserStandart: EventEmitter<IUserStandart> = new EventEmitter<IUserStandart>();
 
   constructor(
     private _router : Router,
@@ -91,14 +92,17 @@ export class AuthService {
     
     this._router.navigate(['/login']);
   }
-
   private parseUser(): void {
     let authDataString = atob(this.accessToken.split('.')[1]);
-    let userName = JSON.parse(authDataString).name;
-    let userId = JSON.parse(authDataString).id; 
+    let decodedAuthDataString = decodeURIComponent(escape(authDataString));
+    let userData = JSON.parse(decodedAuthDataString);
+    
+    let userName = userData.name;
+    let userId = userData.id;
+    
     window.localStorage.setItem('userName', userName);
     window.localStorage.setItem('userId', userId);
-  }
+}
 
   public dialogUpdateUserParametrs(userParametrs: IUserParametrs): void {
     const dialogRef = this._dialog.open(UpdateUserParametrsComponent, {data: userParametrs});
@@ -111,8 +115,18 @@ export class AuthService {
     });
   }
 
-  public calculateCalorieIntake(userParams: IUserParametrs): number {
+  public calculateCalorieIntake(userParams: IUserParametrs): IUserStandart {
     let BMR: number;
+    if (userParams.age === -1 ||
+        userParams.height === -1 ||
+        userParams.weight === -1) {
+      return {
+        kkal: -1,
+        proteins: -1,
+        fats: -1,
+        carbohydrates: -1
+      };
+    }
     
     if (userParams.gender === 1) {
       BMR = 88.362 + (13.397 * userParams.weight) + (4.799 * userParams.height) - (5.677 * userParams.age);
@@ -154,6 +168,15 @@ export class AuthService {
         // Ничего не делаем
     }
     
-    return Math.round(calorieIntake);
-  }
+    const proteinGrams = Math.round(userParams.weight * 2); // Примерное количество белков в граммах
+    const fatGrams = Math.round(calorieIntake * 0.3 / 9); // Примерное количество жиров в граммах
+    const carbGrams = Math.round(calorieIntake * 0.5 / 4); // Примерное количество углеводов в граммах
+    
+    return {
+      kkal: Math.round(calorieIntake),
+      proteins: proteinGrams,
+      fats: fatGrams,
+      carbohydrates: carbGrams
+    };
+}
 }
