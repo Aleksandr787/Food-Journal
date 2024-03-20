@@ -16,19 +16,19 @@ import { GenderPipe } from "../../../pipes/gender.pipe";
     standalone: true,
     template: `
     <div *ngIf="authService.isAutorized" class="main-container">
-      <div *ngIf="userParametrs" class="title">
+      <div *ngIf="authService.userParametrs" class="title">
         <h2>Привет, {{authService.userName}}!</h2>
-        <h2>Возраст: {{userParametrs.age}}</h2>
-        <h2>Рост(см): {{userParametrs.height}}</h2>
-        <h2>Вес(кг): {{userParametrs.weight}}</h2>
-        <h2>Пол: {{userParametrs.gender | gender}}</h2>
-        <h2>Физическая активность: {{userParametrs.activity | activity}}</h2>
-        <h2>Цель: {{userParametrs.goal | goalPipe}}</h2>
-        <div *ngIf="userStandarts" class="title">
-          <h2>Cуточная норма каллорий (ккал): {{userStandarts.kkal}}</h2>
-          <h2>Cуточная норма белков (гр): {{userStandarts.proteins}}</h2>      
-          <h2>Cуточная норма жиров (гр): {{userStandarts.fats}}</h2>      
-          <h2>Cуточная норма углеводов (гр): {{userStandarts.carbohydrates}}</h2>      
+        <h2>Возраст: {{authService.userParametrs.age}}</h2>
+        <h2>Рост(см): {{authService.userParametrs.height}}</h2>
+        <h2>Вес(кг): {{authService.userParametrs.weight}}</h2>
+        <h2>Пол: {{authService.userParametrs.gender | gender}}</h2>
+        <h2>Физическая активность: {{authService.userParametrs.activity | activity}}</h2>
+        <h2>Цель: {{authService.userParametrs.goal | goalPipe}}</h2>
+        <div *ngIf="authService.userStandarts" class="title">
+          <h2>Cуточная норма каллорий (ккал): {{authService.userStandarts.kkal}}</h2>
+          <h2>Cуточная норма белков (гр): {{authService.userStandarts.proteins}}</h2>      
+          <h2>Cуточная норма жиров (гр): {{authService.userStandarts.fats}}</h2>      
+          <h2>Cуточная норма углеводов (гр): {{authService.userStandarts.carbohydrates}}</h2>      
 
         </div>
 
@@ -52,8 +52,6 @@ import { GenderPipe } from "../../../pipes/gender.pipe";
 export class MainPageComponent implements OnInit {
 
   public sliderValue: string = '';
-  public userParametrs: IUserParametrs | undefined;
-  public userStandarts: IUserStandart | undefined;
 
   constructor(
     public authService: AuthService,
@@ -62,19 +60,7 @@ export class MainPageComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.loadUserParametrs();
-
-    this.authService.eventUpdateUserParametrs.subscribe(() => {
-      this.loadUserParametrs();
-    })
-  }
-
-  public loadUserParametrs(): void {
-    this.authService.getUserParametrs().subscribe((res) => {
-      this.userParametrs = res;
-      this.userStandarts = this.authService.calculateCalorieIntake(res);
-      this.authService.eventUserStandart.emit(this.userStandarts);
-    });
+    this.authService.loadUserParametrs();
   }
 
   public formatLabel(value: number): string {
@@ -83,8 +69,7 @@ export class MainPageComponent implements OnInit {
   }
 
   public onUpdateUserParametrsDialog(): void {
-    if(!this.userParametrs) return;
-    this.authService.dialogUpdateUserParametrs(this.userParametrs);
-    this.authService.eventUserStandart.emit(this.userStandarts);
+    this.authService.dialogUpdateUserParametrs();
+    // this.authService.eventUserStandart.emit(this.userStandarts);
   }
 }
