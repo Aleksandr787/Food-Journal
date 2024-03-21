@@ -86,7 +86,7 @@ import { AuthService } from '../../../services/auth/auth.service';
 
   </div>
   <div *ngIf="!invalidUserParams()" class="container">
-    <h2>Для работы с календарём введите корректные параметры в разделе "профиль"</h2>
+    <h2 class="container__info">Для работы с календарём введите корректные параметры в разделе "профиль"</h2>
   </div>
 
   `,
