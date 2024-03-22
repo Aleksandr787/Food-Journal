@@ -7,11 +7,10 @@ import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { RouterModule } from '@angular/router';
-import { AuthorPipe } from '../../../pipes/author/author.pipe';
 import { ProductService } from '../../../services/product/product.service';
 import { IProduct } from '../../../interfaces/product';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
-import { DeleteBooksComponent } from '../../dialogs/delete-books/delete-books/delete-books.component';
+import { DeleteBooksComponent } from '../../dialogs/delete-books/delete-product/delete-product.component';
 
 @Component({
   selector: 'cm-product-card',
@@ -24,7 +23,6 @@ import { DeleteBooksComponent } from '../../dialogs/delete-books/delete-books/de
     MatRippleModule,
     MatDialogModule,
     MatIconModule,
-    AuthorPipe,
     RouterModule,
     MatButtonToggleModule
   ],

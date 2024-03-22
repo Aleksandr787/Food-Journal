@@ -4,7 +4,6 @@ import { MatButtonModule } from '@angular/material/button';
 import { RouterOutlet, RouterModule, Router } from '@angular/router';
 import { AuthService } from '../../../services/auth/auth.service';
 import { MatSliderModule } from '@angular/material/slider';
-import { BookImageService } from '../../../services/book-image/book-image.service';
 import { MatIconModule } from '@angular/material/icon';
 import { IUserParametrs, IUserStandart } from '../../../interfaces/user';
 import { GoalPipePipe } from "../../../pipes/goal-pipe.pipe";
@@ -19,7 +18,7 @@ import { UserParametrsPipe } from "../../../pipes/user-parametrs.pipe";
     <div *ngIf="authService.isAutorized" class="main-container">
       <div *ngIf="authService.userParametrs" class="title">
       <h2>Привет, {{authService.userName}}!</h2>
-      <div 
+      <div class="title"
         [innerHTML]="authService.userParametrs | userParametrs">
       <h2>Привет, {{authService.userName}}!</h2>
 

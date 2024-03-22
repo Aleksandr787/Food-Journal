@@ -18,6 +18,15 @@ $phone-media: 500px;
     }
 }
 
+.name {
+    font-size: 28px;
+    color: var(--md-sys-color-on-surface);
+    margin-bottom: 24px;
+    border: 1px solid var(--md-sys-color-on-surface-variant);
+    border-radius: 8px;
+    padding: 24px;
+}
+
 .register {
     display: flex;
     flex-direction: column;

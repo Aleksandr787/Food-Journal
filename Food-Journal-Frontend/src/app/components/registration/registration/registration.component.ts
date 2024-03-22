@@ -20,6 +20,7 @@ import { Router } from '@angular/router';
   ],
   template: `
     <div class="wrapper">
+      <span class="name">Дневник питания</span>
       <div class="register">
         <span class="register__title">Создать аккаунт</span>
         <div class="login">

@@ -3,7 +3,6 @@ import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angula
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
-import { IEditBookImage } from '../../../interfaces/book';
 import { MatButtonModule } from '@angular/material/button';
 import { MatRippleModule } from '@angular/material/core';
 import { MatIconModule } from '@angular/material/icon';
@@ -102,19 +101,6 @@ export class AddProductComponent implements OnInit {
     else {
       this.onAdd();
     }
-  }
-
-  private onEdit(): void {
-    if (!this.data) return;
-
-    let book: IEditBookImage = {
-      id: this.data?.id,
-      name: this.productForm.get("name")?.value ?? '',
-      author: this.productForm.get("authorName")?.value ?? '',
-      imageUrl: this.productForm.get("imageUrl")?.value ?? ''
-    }
-
-    this.dialogRef.close(book);
   }
 
   private onAdd(): void {

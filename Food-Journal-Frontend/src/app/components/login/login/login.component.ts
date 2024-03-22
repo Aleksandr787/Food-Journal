@@ -22,6 +22,7 @@ import { MatSliderModule } from '@angular/material/slider';
   ],
   template: `
     <div class="wrapper">
+      <span class="name">Дневник питания</span> 
       <div class="register">
         <span class="register__title">Добро пожаловать</span>
         <div class="login">

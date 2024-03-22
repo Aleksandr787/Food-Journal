@@ -12,7 +12,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { SearchProductDialogComponent } from '../../search-product-dialog/search-product-dialog/search-product-dialog.component';
 import { Overlay } from '@angular/cdk/overlay';
 import { ActivatedRoute, Router } from '@angular/router';
-import { DeleteBooksComponent } from '../../dialogs/delete-books/delete-books/delete-books.component';
+import { DeleteBooksComponent } from '../../dialogs/delete-books/delete-product/delete-product.component';
 import Chart from 'chart.js/auto';
 import { IUserStandart } from '../../../interfaces/user';
 import { AuthService } from '../../../services/auth/auth.service';

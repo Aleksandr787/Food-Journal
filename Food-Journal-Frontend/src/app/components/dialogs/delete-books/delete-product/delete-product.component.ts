@@ -31,7 +31,7 @@ import { MatInputModule } from '@angular/material/input';
       <button mat-flat-button (click)="onDelete()" >Да</button>
     </div>
   `,
-  styleUrl: './delete-books.component.scss'
+  styleUrl: './delete-product.component.scss'
 })
 export class DeleteBooksComponent {
 

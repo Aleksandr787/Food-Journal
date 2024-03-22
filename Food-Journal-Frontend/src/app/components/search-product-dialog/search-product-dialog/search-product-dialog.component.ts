@@ -8,7 +8,6 @@ import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { ActivatedRoute, Router, RouterModule } from '@angular/router';
-import { AuthorPipe } from '../../../pipes/author/author.pipe';
 import { IProduct } from '../../../interfaces/product';
 import { ProductService } from '../../../services/product/product.service';
 import { DayService } from '../../../services/day/day.service';
@@ -24,7 +23,6 @@ import { DayService } from '../../../services/day/day.service';
     MatRippleModule,
     MatDialogModule,
     MatIconModule,
-    AuthorPipe,
     RouterModule,
     MatButtonToggleModule
   ],
