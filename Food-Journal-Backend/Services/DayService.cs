@@ -16,11 +16,6 @@ namespace Food_Journal.Services
 
         public Day AddDay(DateTime dateId, Guid userId)
         {
-            //if (GetDay(dateId, userId) != null )
-            //{
-            //    return ;
-            //}
-
             var day = new Day
             {
                 Id = dateId,
@@ -34,7 +29,6 @@ namespace Food_Journal.Services
 
         public ProductItem AddProductItem(DateTime dateId, Guid userId, ProductItemRequest productItemRequest)
         {
-            //Day day = GetDay(dateId, userId) ?? AddDay(dateId, userId);
             Day day = GetDay(dateId, userId);
 
 

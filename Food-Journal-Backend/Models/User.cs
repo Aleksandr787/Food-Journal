@@ -18,7 +18,6 @@
         public int Gender { get; set; }
         public int Activity { get; set; }
         public int Goal { get; set; }
-
     }
 
     public class UserParametrsRequest

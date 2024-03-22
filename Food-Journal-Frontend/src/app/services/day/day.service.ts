@@ -25,37 +25,12 @@ export class DayService {
   public addProductItem(id: Date, productItem: IProductItemRequest): Observable<IProductItem> {
     console.log("Add productItem");
     return this._httpClient.post<any>(environment.apiUrlDocker + 'days/' + (new Date(id)).toDateString(), JSON.stringify(productItem));
-
-    // return this.isNotValidImageUrl(productAdd.imageUrl).pipe(
-    //   tap((result) => {
-    //     if (result) {
-    //       productAdd.imageUrl = this._defaultImageUrl;
-    //     }
-    //   }),
-    //   switchMap(() => this._httpClient.post<any>(environment.apiUrlDocker + 'books', JSON.stringify(productAdd)))
-    // );
   }
 
   public deleteProductItem(dayId: Date, productId: string) {
     console.log("Delete productItem");
     return this._httpClient.delete<any>(environment.apiUrlDocker + 'days/' + (new Date(dayId)).toDateString() + '/' + productId);  
   }
-
-  // public addWeightDialog(product: IProduct): void {
-  //   const dialogRef = this._dialog.open(WeightProductDialogComponent, { data: { product: product } });
-
-  //   dialogRef.afterClosed().subscribe((result: IProductItemRequest) => {
-  //     if (result) {
-  //       this._dayService.addProductItem(this.dayId, result).subscribe(() => {
-  //         // КАКИМТО ОБРАЗОМ ПРИ ОБРАТНОЙ НАВИГАЦИИ В КАЛЕНДАРЬ ПЕРЕДАВАТЬ DayID ЧТОБЫ ЗАГРУЗИТЬ ИМЕННО ЭТУ СТРАНИЦУ КАЛЕНДАРЯ!
-  //         this._router.navigate(['/calendar'])
-  //       });
-  //       // this._dayService.addProductItem(this.dayId, result).subscribe(() => {
-  //       //   this._router.navigate(['/calendar'])
-  //       // });
-  //     }
-  //   });
-  // }
 
   public dialogAddWeight(dayId: Date, product: IProduct): void {
     // создь addProductComponent (диaлог)
@@ -82,6 +57,4 @@ export class DayService {
     console.log("Get Day");
     return this._httpClient.get<IDay>(environment.apiUrlDocker + 'days/' + (new Date()).toDateString());
   }
-
-
 }

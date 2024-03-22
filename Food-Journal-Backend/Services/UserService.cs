@@ -21,20 +21,6 @@ namespace Food_Journal.Services
         public UserParametrs? GetUserParametrs(Guid userId) =>
             _usersParametrs.SingleOrDefault(x => x.Id == userId);
 
-        public UserParametrs? UpdateUserParametrs(Guid id, UserParametrsRequest request)
-        {
-            var userParametrs = GetUserParametrs(id);
-
-            if (userParametrs is null) return null;
-            userParametrs.Age = request.Age;
-            userParametrs.Height = request.Height;
-            userParametrs.Weight = request.Weight;
-            userParametrs.Gender = request.Gender;
-            userParametrs.Activity = request.Activity;
-            userParametrs.Goal = request.Goal;
-            return userParametrs;
-        }
-
         public User AddUser(UserRequest request)
         {
             var user = new User
@@ -58,6 +44,20 @@ namespace Food_Journal.Services
             });
 
             return user;
+        }
+
+        public UserParametrs? UpdateUserParametrs(Guid id, UserParametrsRequest request)
+        {
+            var userParametrs = GetUserParametrs(id);
+
+            if (userParametrs is null) return null;
+            userParametrs.Age = request.Age;
+            userParametrs.Height = request.Height;
+            userParametrs.Weight = request.Weight;
+            userParametrs.Gender = request.Gender;
+            userParametrs.Activity = request.Activity;
+            userParametrs.Goal = request.Goal;
+            return userParametrs;
         }
 
         public static IResult Login(UserService userService, IOptions<AuthSettings> authSettings, LoginRequest request, CancellationToken cancellationToken)

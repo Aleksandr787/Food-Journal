@@ -11,10 +11,7 @@ import { ActivatedRoute, Router, RouterModule } from '@angular/router';
 import { AuthorPipe } from '../../../pipes/author/author.pipe';
 import { IProduct } from '../../../interfaces/product';
 import { ProductService } from '../../../services/product/product.service';
-import { DeleteBooksComponent } from '../../dialogs/delete-books/delete-books/delete-books.component';
 import { DayService } from '../../../services/day/day.service';
-import { WeightProductDialogComponent } from '../../weight-product-dialog/weight-product-dialog/weight-product-dialog.component';
-import { IProductItemRequest } from '../../../interfaces/day';
 
 @Component({
   selector: 'cm-search-product-dialog',
@@ -56,30 +53,12 @@ export class SearchProductDialogComponent {
     return false;
   }
 
-  // public onBaseProductsClick(): void {
-  //   this.key = "0";
-  //   this.isActiveBase = true;
-  //   this.isActiveUser = false;
-  //   this.loadProducts(this.key);
-  // }
-
-  // public onUserProductsClick(): void {
-  //   this.key = "1";
-  //   this.isActiveBase = false;
-  //   this.isActiveUser = true;
-  //   this.loadProducts(this.key);
-  // }
-
   public ngOnInit(): void {
     this.loadProducts();
 
     this._route.queryParams.subscribe(params => {
       this.dayId = params['dayId'];
     });
-
-    // this._productService.eventAddProduct.subscribe(() => {
-    //   this.loadProducts();
-    // })
   }
 
 
@@ -115,34 +94,4 @@ export class SearchProductDialogComponent {
   public addWeightDialog(product: IProduct): void {
     this._dayService.dialogAddWeight(this.dayId, product);
   }
-
-  // //РАБОЧИЙ МЕТОД!!!
-  // public addWeightDialog(product: IProduct): void {
-  //   const dialogRef = this._dialog.open(WeightProductDialogComponent, { data: { product: product } });
-
-  //   dialogRef.afterClosed().subscribe((result: IProductItemRequest) => {
-  //     if (result) {
-  //       this._dayService.addProductItem(this.dayId, result).subscribe(() => {
-  //         // КАКИМТО ОБРАЗОМ ПРИ ОБРАТНОЙ НАВИГАЦИИ В КАЛЕНДАРЬ ПЕРЕДАВАТЬ DayID ЧТОБЫ ЗАГРУЗИТЬ ИМЕННО ЭТУ СТРАНИЦУ КАЛЕНДАРЯ!
-  //         this._router.navigate(['/calendar'])
-  //       });
-  //       // this._dayService.addProductItem(this.dayId, result).subscribe(() => {
-  //       //   this._router.navigate(['/calendar'])
-  //       // });
-  //     }
-  //   });
-  // }
-
-  // public deleteProduct(id: string): void {
-  //   console.log("delete product");
-  //   const dialogRef = this._dialog.open(DeleteBooksComponent, { data: { all: true } });
-
-  //   dialogRef.afterClosed().subscribe((result: boolean) => {
-  //     if (result) {
-  //       this._productService.deleteProduct(id).subscribe(() => {
-  //         this.loadProducts();
-  //       });
-  //     }
-  //   });
-  // }
 }
