@@ -18,6 +18,9 @@ namespace Food_Journal.Services
         public User? GetUser(string email, string password) =>
             _users.SingleOrDefault(x => x.Email == email && x.Password == password);
 
+        public User? UserExists(string email) =>
+            _users.SingleOrDefault(x => x.Email == email);
+
         public UserParametrs? GetUserParametrs(Guid userId) =>
             _usersParametrs.SingleOrDefault(x => x.Id == userId);
 

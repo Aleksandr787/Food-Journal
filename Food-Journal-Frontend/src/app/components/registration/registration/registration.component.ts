@@ -86,11 +86,30 @@ export class RegistrationComponent {
       email: this.email.value,
       password: this.password.value
     }
-    this._authService.register(registerModel).subscribe(() => {
-      this._router.navigate(['/login']);
+    this._authService.register(registerModel).subscribe({
+      next: () => {
+        this._router.navigate(['/login']);
+      },
+      error: () => {
+        alert('Nope');
+      }
     });
   }
 
+  // public login(): void {
+  //   let loginModel: ILogin = {
+  //     email: this.email.value,
+  //     password: this.password.value
+  //   }
+  //   this._authService.login(loginModel).subscribe({
+  //     next: () => {
+  //       this._router.navigate(['/main']);
+  //     },
+  //     error: () => {
+  //       alert('Nope');
+  //     }
+  //   });
+  // }
   public logout(): void {
     this._authService.logout();
   }

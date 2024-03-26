@@ -61,31 +61,18 @@ namespace Food_Journal.Controllers
         [Description("Регистрация нового пользователя")]
         public ActionResult<bool> Register([FromBody] UserRequest request, CancellationToken cancellationToken)
         {
-            var user = _userService.AddUser(request);
+            var user = _userService.UserExists(request.Email);
+            if (user != null)
+            {
+                return BadRequest();
+            }
+
+            user = _userService.AddUser(request);
             return user.Equals(null) ? Ok(false) : Ok(true);
         }
 
         private static LoginResponse Authorize(User user, AuthSettings? authSettings)
         {
-            //var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(authSettings.JWTSecret!));
-            //var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
-            //var claims = new[]
-            //{
-            //    new Claim(ClaimTypes.NameIdentifier,user.Name),
-            //    new Claim(ClaimTypes.Email,user.Email)
-            //};
-
-            //var token = new JwtSecurityToken(authSettings.JWTIssuer,
-            //    authSettings.JWTAudience,
-            //    claims,
-            //    expires: DateTime.Now.AddDays(7),
-            //    signingCredentials: credentials);
-
-
-            //return new LoginResponse {
-            //    AccessToken = new JwtSecurityTokenHandler().WriteToken(token)
-            //};
-
             var identity = new ClaimsIdentity(new[]
             {
             new Claim("id", user.Id.ToString()),
