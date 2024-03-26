@@ -13,7 +13,8 @@ namespace Food_Journal.Services
 
         public ProductService()
         {
-            string filePath = "D:\\ProgectsVS\\Kyrsovaya-2-semestr\\Food-Journal\\Food-Journal-Backend\\Services\\DataProducts\\BaseProducts.json"; // Update the file path accordingly
+            //string filePath = "D:\\ProgectsVS\\Kyrsovaya-2-semestr\\Food-Journal\\Food-Journal-Backend\\Services\\DataProducts\\BaseProducts.json"; // Update the file path accordingly
+            string filePath = "Services\\DataProducts\\BaseProducts.json";
 
             if (File.Exists(filePath))
             {

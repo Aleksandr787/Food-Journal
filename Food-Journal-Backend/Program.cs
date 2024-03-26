@@ -16,7 +16,6 @@ builder.Services.AddControllers();
 // Add services to the container.
 builder.Services.AddSingleton<UserService>();
 builder.Services.AddSingleton<ProductService>();
-builder.Services.AddSingleton<BookService>();
 builder.Services.AddSingleton<DayService>();
 
 
